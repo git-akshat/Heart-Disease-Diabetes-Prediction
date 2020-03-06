@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,25 +465,86 @@ File: images/animesh_chotu.png Graphic file (type png)
 <use images/animesh_chotu.png>
 Package pdftex.def Info: images/animesh_chotu.png  used on input line 305.
 (pdftex.def)             Requested size: 309.40518pt x 174.65207pt.
- [15 <./images/chotu.png>] [16 <./images/animesh_chotu.png>] [17] (./report.aux
-) ) 
+ [15 <./images/chotu.png>] [16 <./images/animesh_chotu.png>] [17] [18
+
+]
+Chapter 3.
+<images/home.png, id=77, 1434.86063pt x 638.385pt>
+File: images/home.png Graphic file (type png)
+<use images/home.png>
+Package pdftex.def Info: images/home.png  used on input line 349.
+(pdftex.def)             Requested size: 483.69684pt x 215.19724pt.
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 349--351
+ [] 
+ []
+
+<images/features.png, id=78, 1439.3775pt x 609.77812pt>
+File: images/features.png Graphic file (type png)
+<use images/features.png>
+Package pdftex.def Info: images/features.png  used on input line 353.
+(pdftex.def)             Requested size: 483.69684pt x 204.91196pt.
+<images/feature-analysis.png, id=79, 1437.11906pt x 664.73344pt>
+File: images/feature-analysis.png Graphic file (type png)
+<use images/feature-analysis.png>
+Package pdftex.def Info: images/feature-analysis.png  used on input line 354.
+(pdftex.def)             Requested size: 483.69684pt x 223.73434pt.
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 353--357
+ [][] 
+ []
+
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 353--357
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19 <./images/home.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./images/features.png> <./images/feature-analysis.png>]
+<images/prediction-header.png, id=90, 1439.3775pt x 333.49594pt>
+File: images/prediction-header.png Graphic file (type png)
+<use images/prediction-header.png>
+Package pdftex.def Info: images/prediction-header.png  used on input line 359.
+(pdftex.def)             Requested size: 483.69684pt x 112.06912pt.
+<images/prediction.png, id=91, 1440.13031pt x 654.94687pt>
+File: images/prediction.png Graphic file (type png)
+<use images/prediction.png>
+Package pdftex.def Info: images/prediction.png  used on input line 360.
+(pdftex.def)             Requested size: 483.69684pt x 219.9707pt.
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 359--362
+ [][] 
+ []
+
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 359--362
+ [] 
+ []
+
+[21 <./images/prediction-header.png> <./images/prediction.png>] (./report.aux) 
+) 
 Here is how much of TeX's memory you used:
- 4713 strings out of 492615
- 69276 string characters out of 6131389
+ 4738 strings out of 492615
+ 69886 string characters out of 6131389
  156960 words of memory out of 5000000
- 8564 multiletter control sequences out of 15000+600000
+ 8584 multiletter control sequences out of 15000+600000
  6424 words of font info for 23 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,38p,1700b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (17 pages, 330861 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on report.pdf (21 pages, 1594733 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
