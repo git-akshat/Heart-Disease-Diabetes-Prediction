@@ -3,6 +3,9 @@
 \author{akshat}
 \date{2020}
 
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
 %%% Landscape
 \usepackage{pdflscape}
 
@@ -30,6 +33,8 @@
 %Packages for Subfigures
 \usepackage{caption}
 \usepackage{subcaption}
+
+\usepackage{float}
 
 \begin{document}
 	
@@ -345,29 +350,308 @@
     	\section{Interface Design}
     	This section describes about the user’s interaction with the interface. The inter-face designs/screen-shots have been added in order to give a better view of the user Interface.
     	
-    	\begin{center}
+    	
+    		\begin{center}
     			\includegraphics[width=17cm]{images/home.png}
-    			Figure 3.1: Home page
+    			\begin{figure}
+    				\caption{Home page}
+    			\end{figure}
+    		\end{center}
+    
     			
+    			\begin{figure}
+    				\begin{center}
+    				\includegraphics[width=17cm]{images/features}
+    				\includegraphics[width=17cm]{images/feature-analysis}
+    				\caption{Feature of dataset}
+    				\end{center}
+    			\end{figure}
     			
-    			\includegraphics[width=17cm]{images/features}
-    			\includegraphics[width=17cm]{images/feature-analysis}
-    			Fig 3.2: Feature of dataset
-    			\pagebreak
-    			
-    			
-    			\includegraphics[width=17cm]{images/prediction-header}
-    			\includegraphics[width=17cm]{images/prediction}
-    			Fig 3.3: Preiction Engine
-    	\end{center}
+    			\begin{figure}
+    				\begin{center}
+    				\includegraphics[width=17cm]{images/prediction-header}
+    				\includegraphics[width=17cm]{images/prediction}
+    				\caption{Preiction Engine}
+    				\end{center}
+    			\end{figure}
+    
+    \pagebreak
+    \section{Data Structures and Algorithms}
+    	This section deals with data structure and algorithms we have used in our project.
+    	
+    \subsection{Naive Bayes Classifier}
+    	Naive  Bayes  classifiers  are a  family  of  simple  probabilistic classifiers based by using Bayes theorem with strong (Naive) independence  assumptions between  the features.Naive  Bayes classifiers are highly  scalable by requiring a number  of  parameters  linear  for  the number  of  features  or predictors as variable in a learning problem. It is the simplest and the fastest probabilistic classifier especially for the training phase.\\
+    	Naive Bayes classifier is based on Bayes theorem. This classifier uses conditional independence in which attribute value is independent of the values of other attributes. The Bayes theorem is as follows:
+    	Let X= {x1, x2, ......, Xn} be a set of n attributes. In Bayesian, X is considered as evidence and H be some hypothesis means, the data of X belongs to specific class C. We have to determine P (H|X), the probability that the hypothesis H holds given evidence i.e. data sample X. According to Bayes theorem the P (H|X) is expressed as: \\
+    	\[P(H|X) = \frac{P(X|H) * P(H)}{P(X)}\].
+    	
+    	\begin{figure}[h]
+    		\begin{center}
+    			\includegraphics[width = 15cm]{images/naive_bayes.png}\\
+    			\caption{Implementation Flow of Naive Bayes Algorithm}
+    		\end{center}
+    	\end{figure}
+    	
+       	Using Bayesian classifiers, the system will discover the concealed knowledge associated with diseases from historical records of the patients having heart disease. Bayesian classifiers predict the class membership probabilities, in a way that the probability of a given sample belongs to a particular class statistically. Bayesian classifier is based on Bayes’ theorem. We can use Bayes theorem to determine the probability that a proposed diagnosis is correct, given the observation. A simple probabilistic, the naive Bayes classifier is used for classification based on which is based on Bayes’ theorem. According to naive Bayesian classifier the occurrence or an occurence of a particular feature of a class is considered as independent in the presence or absence of any other feature. When the dimension of the inputs is high and more efficient result is expected, the chief Naive Bayes Classifier technique is applicable. The Naive Bayes model identifies the physical characteristics and features of patients suffering from heart disease. For each input, it gives the possibility of attribute of the acceptable state. Naive Bayes is a statistical classifier which assumes no dependency between attributes. This classifier algorithm uses conditional independence, means it assumes that an attribute value of a given class is independent of the values of other attributes. The advantage of using Naive Bayes is that one can work with the Naive Bayes model without. using any Bayesian methods. (Brownlee, 2016). 
+    	P (Disease|symptom1, symptom2, ..., symptomn) P(Disease)P(symptom1, ..., symptomn|Disease) = P(symptom1, symptom2, ...symptomnN).\\
+    	
+    	
+    
+    
+    	\subsection{Decision Tree}
+    	Decision tree learning uses a decision tree as a predictive model which maps observations about an item to conclusions about the item's target value. It is one of the predictive modelling approaches used in statistics, data mining and machine learning. Tree models where the target variable can take a finite set of values are called classification trees. In these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. Decision trees where the target variable can take continuous values (typically real numbers) are called regression trees. In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. In data mining, a decision tree describes data but not decisions; rather the resulting classification tree can be an input for decision making.
+    	The classification tree literally creates a tree with branches, nodes, and leaves that lets us take an unknown data point and move down the tree, applying the attributes of the data point to the tree until a leaf is reached and the unknown output of the data point can be determined. In order to create a good classification tree model, we need to have an existing data set with known output from which we can build our model. We also divide our data set into two parts: a training set, which is used to create the model, and a test set, which is used to verify that the model is accurate and not over fitted. \\
+    	This classifier creates a decision tree based on which it assigns the class values to each data point. Here, we can vary the maximum number of features to be considered while creating the model.\\
+    	
+    		\begin{figure}
+    		\begin{center}
+    			\includegraphics[height=17cm]{images/decision_tree.png}
+    			\caption{Flowchart for Decision Tree}
+    		\end{center}
+    	\end{figure}
     
     	
+    	\subsection{Support vector machine(SVM)}
+    	SVM was developed by Vladimir Vapnik at AT\&T Bell Labs. It is based on the concept of decision planes that define decision boundaries. A decision plane is a hyperplane that separates the objects having different class memberships. SVM classifiers separate the observations into two or more classes in such a way that maximum separation is achieved. A hypothetical hyperplane is the separator in SVM classification problems.  In other words, SVM constructs a hyperplane that separates the two sets so as to minimize the number of misclassified points. Generally, there are two types of SVM models: linear and nonlinear. Linear SVM works better on linearly separable datasets but nonlinear SVM model works well even on hardly separable datasets. Since we are dealing with hardly separable data in our experiments we use nonlinear SVM. The dual formulation of the nonlinear SVM function can be formulated as
+    	\[ MaxW(\alpha) = \sum_{i=1}^{m}\alpha_i - 0.5\sum_{i, j=1}^{m}\alpha_i \alpha_j y_i y_j K(x_i . x_j) \]\\
+    	subject to:
+    	\[\sum_{i=1}^{m}\alpha_i y_i = 0 ,\]\\
+    	\[ 0 \leq \alpha_i \leq C \]\\
+    	\begin{figure}
+    		\begin{center}
+    			\includegraphics[width=14cm]{images/svm.png}
+    			\caption{Flowchart For SVM}
+    		\end{center}
+    	\end{figure}
+    	Input vectors $x_i \in R^m$ , i= 1, 2, 3, …, m, which are called features or attributes are extracted from the database. Associated with every particular input we have a corresponding label ($ y_i = \pm 1$) which is called the target value or output in the database. The variable $\alpha_i$ is the Lagrange multiplier in the dual formulation and C is a user-specified parameter representing the penalty for misclassification K(xi ,xj) is the kernel function and maps the original data points to another space.  One of the popular choices for the kernel is Gaussian kernel which is also known as Radial Basis Function (RBF) in the literature. The formulation for this kernel is
+    	\[ K(x_i, x_j) = e^{-\frac{\parallel{x_i - x_j}\parallel^2}{2\sigma}} \]
+    	where parameter $\sigma$ is known as the kernel width. 
     	
     	
     	
+    	\subsection{Logistic Regression}
+    	Logistic Regression is a statistical analysis technique that is used for predicting the data value based on the prior observation of the data set. The logistic regression model predicts the dependent data variable by analyzing the relationship between one or more existing independent variables. Logistic Regression is one of the important tools for prediction, which can also be used for classifying and predicting the data based on the historical data. The implemented model is a binary Logistic model that has dependent variables with only two possible outcomes i.e., one is a positive value and another one is the negative value which is having 0 or 1 as a class label.
+    	It mainly consists of two major phases: regularized cost function and regularized gradient descent. Cost Function is used for calculating the maximum likelihood estimation. Gradient descent is an iterative process for getting coefficients from training
+    	data. The process is repeated until we get the optimal parameters of train data. The model is trained with the optimal coefficient.Whenever a test data has been passed to the model based on the parameters is able to identify whether the person is having heart disease or not, it tests the data using the sigmoid function. The cost function is the method that is used for reducing the errors of the predicted label and the actual label. Gradient descent function is the method that is used for calculating the coefficient until we obtain a minimum value of the class label.
+    	
+    		
+    	\begin{figure}
+    		\begin{center}
+    			\includegraphics[width=14cm]{images/logistic_regression.png}
+    			\caption{FlowChart For Logistic Regression}
+    		\end{center}
+    	\end{figure}
+    	
+    	\subsubsection{Cost Function}
+    		A minimization function is used that is the cost function. It uses the 
+    		Log Loss i.e. the logarithmic loss which measures the performance 
+    		of the model where the prediction input value is the probability 
+    		between the zero and one. The Log loss is the uncertainty of the 
+    		prediction which is based on the how  much  it  varies  from  the 
+    		actual label. Cost function which helps the learner to correct or 
+    		change the behavior to minimize the mistakes. The cost function 
+    		can be estimated by iteratively running the model to compare the 
+    		estimated predicted value and the known or actual  value. The 
+    		regularized cost function is a method that is used for overcoming 
+    		the risk of over fitting.  Lamda  is  the  parameter  which  controls 
+    		the regularization term. The  cost function  is calculated  by  the 
+    		following:
+    		\[ J(\theta) = \frac{1}{m}\sum_{i=1}^{m} y^{(i)} \log[h_\theta(x^{(i)}) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)})] + \frac{\lambda}{2m}\sum_{i=1}^{n}{\theta_j}^2 \] \\
+    		m = number of instances \\
+    		n = number of attributes \\
+    		y = class label \\
+    		x = train data features\\
+    		$\theta$ = coefficients \\ 
+    		$\lambda$ =learning rate
+    	
+    	
+    	\subsubsection{Gradient Descent}
+    		Gradient descent is an optimization method which is used to find 
+    		the parameters or  the  coefficient  of  the  cost  function.  Gradient 
+    		descent is  a  repeated  process  in  order  to  get  the  coefficients  to 
+    		minimize the cost function. The  Gradient  descent  is  calculated 
+    		for both the classes to get the pair of a coefficient for both class 
+    		labels. The goal here is to continue the procedure to try the different 
+    		value for the coefficient, evaluating their cost  and selecting the new coefficient that is having the slightly lower cost. Considering this coefficient and storing them in the model. Gradient descent 
+    		is calculates as the following:
+    		\[ \theta_{ji} = \theta_j - \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^i)-(y^i)) {x_j}^i + \frac{\lambda}{m} \theta_j \]\\
+    		m = number of instances \\
+    		x = train data features \\
+    		y = class label \\
+    		$\theta$ = coefficients \\
+    		$\lambda$ = learning rate 
+    		
+    		
     
+    	\subsubsection{Sigmoid Function}
+    		Sigmoid function is the logistic function between. This takes the 
+    		real input vales and output values between the 0 and 1 for logistic 
+    		function [12]. This is interpreted as taking log odds and having 
+    		the output probability. Generally sigmoid function is used to map 
+    		predictions to probability it is defined as:
+    		\[ h_\theta(x) = \frac{1}{1 + e^{-\theta^{T.x}}} \]\\
+    		x = test data features \\
+    		$\theta$ = coefficients 
+    		Whenever a  test  data is passed it calculates  the  value based on 
+    		the parameters stored in the model. It calculates the probability 
+    		of each class label. We return the maximum probability value of 
+    		the class label $x_i$.\\
+    		The test data contains the thirteen attributes that we need to pass 
+    		and calculate   for both  the classes it will return  the two values 
+    		we take the maximum value of two values we will return the class 
+    		label which is having the maximum probability.
+    	
+    	
+    	
+    		
+    		\subsection{K-Nearest Neighbour}  
+    		K-Nearest neighbor (KNN) is a simple, lazy and nonparametric classifier. KNN is preferred when all the features are continuous. KNN is also called case-based reasoning and has been used in many applications like pattern recognition, statistical estimation. Classification is obtained by identifying the nearest neighbor to determine the class of an unknown sample. KNN is preferred over other classification algorithms due to its high convergence speed and simplicity.\\
+    		KNN classification has two stages
+    		\begin{enumerate}
+    			\item Find the k number of instances in the dataset that is closest to instance S
+    			\item These k number of instances then vote to determine the class of instance S
+    		\end{enumerate}
+    		The Accuracy of KNN depends on distance metric and K value. Various ways of measuring the distance between two instances are cosine, Euclidean distance. To evaluate the new unknown sample, KNN computes its K nearest neighbors and assign a class by majority voting.\\    		
+    		With KNN algorithm, we have chance to change the parameter's weight. It means that, we may assume that some parameters are more important or making more impact than others. Among 8 parameters we use, we can categorize them our data into 2 categories, one is "non-medical" parameters (Age and Sex) and the other is "medical" parameters (CP, Trestbps, Trestbpd etc). We may think that medical parameters are more important than non medical, which we will see in experimental results. Along with weighting, we should find the value of "k" so it gives the best classification result. Since it is a 2-choice classification ("yes") and (“No”) k will be an odd number.
+    		
+    		\begin{figure}
+    			\begin{center}
+    				\includegraphics[width=15cm]{images/knn.png}
+    				\caption{FlowChart for KNN}
+    			\end{center}
+    		\end{figure}
     
+  		\subsection{Neural Network}
+  		\subsubsection{Multilayer Perceptron Neural Network (MLPNN)}
+  		One of the most important models in Artificial Neural Network is Multilayer Perceptron
+  		(MLP). The  type of architecture  used to  implement  the system  is Multilayer Perceptron Neural Network (MLPNN).
+  		\begin{figure}[H]
+  			\begin{center}
+  				\includegraphics[width=12cm]{images/mlpnn.png}
+  			\end{center}
+  		\end{figure}
+  		The MLPNN consists of one input layer, one output layer and one or more hidden layers.Each layer consists of one or more nodes, represented by small circles. The lines between nodes indicate flow of information from one node to another node. The input layer receives signals from external nodes. The output of input layer is given to hidden layer, through weighted connection links. It performs computations and transmits the result to output layer through weighted links. The output of hidden layer is forwarded to output layer, it performs computations and produce final result. The working of multilayer perceptron neural network is summarized in steps as mentioned
+  		Below:
+  		\begin{enumerate}
+  			\item Input data  is provided to input layer for processing, which  produces a
+  			predicted output.
+  			\item The predicted output is subtracted from actual output and error value is
+  			calculated.
+  			\item  The network then  uses a  Backpropagation algorithm  which  adjusts the
+  			weights.
+  			\item For weights adjusting it starts from weights between output layer nodes
+  			and last hidden layer nodes and works backwards through network.
+  			\item When back propagation is finished, the forwarding process starts again.
+  			\item The process is repeated until the error between predicted and actual output
+  			is minimized.
+  		\end{enumerate}
+  	
+  	\subsubsection{Backpropagation network}
+  	The most widely used training algorithm for multilayer and feed forward network is
+  	Backpropagation. The name given is back propagation because it calculates the difference between actual and predicted values is propagated from output nodes backwards to nodes in previous layer. This is done to improve weights during processing.The working of Backpropagation algorithm is summarized in steps as follows:
+  	\begin{enumerate}
+  		\item Provide training data to the network.
+  		\item Compare the actual and desired output.
+  		\item Calculate the error in each neuron. 
+  		\item Calculate what output should be for each neuron and how much lower or
+  		higher output must be adjusted for desired output.
+  		\item Then adjust the weights
+  	\end{enumerate}
   
+  \begin{figure}
+  	\begin{center}
+  			\includegraphics[width=8cm]{images/backpropogation.png}
+  	\end{center}
+  \end{figure}
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=10cm, height=20cm]{images/neural_network.png}
+		\caption{Flowchart for Neural Network}	
+	\end{center}
+\end{figure}
+
+	\section{UML diagrams with discussions}
+  	
+  	\section{Data Source/Database used and Formats}
+  	\subsection{Heart Disease DataSet}
+  	The dataset used in this project is the Cleveland Heart Disease dataset taken 
+  	from the UCI repository.
+  	\begin{center}
+  		\includegraphics[width=15cm]{images/hdDataset.png}
+  	\end{center}
+  
+  The dataset consists of 303 individuals data. There are 14 columns in the dataset, which    are described below.
+  \begin{enumerate}
+  	\item\textbf{Age:} displays the age of the individual.
+  	
+  	\item \textbf{Sex:} displays the gender of the individual using the following format :
+  		\begin{itemize}
+  			\item 1 = male
+  			\item 0 = female
+  		\end{itemize}
+  	
+  	\item \textbf{Chest-pain type:} displays the type of chest-pain experienced by the individual using the following format :
+  		\begin{itemize}
+  			\item 1 = typical angina
+  			\item 2 = atypical angina
+  			\item 3 = non — anginal pain
+  			\item 4 = asymptotic
+  		\end{itemize}
+  
+  	\item \textbf{Resting Blood Pressure}: displays the resting blood pressure value of an individual in mmHg (unit)
+  	
+  	\item \textbf{Serum} Cholestrol: displays the serum cholesterol in mg/dl (unit)
+  	
+  	\item \textbf{Fasting Blood Sugar}: compares the fasting blood sugar value of an individual with 120mg/dl.
+  		\begin{itemize}
+  			\item If fasting blood sugar > 120mg/dl then : 1 (true)
+  			\item else\\ 								   : 0 (false)
+  		\end{itemize}
+  	
+  	\item \textbf{Resting ECG:} displays resting electrocardiographic results
+  	\begin{itemize}
+  		\item 0 = normal
+  		\item 1 = having ST-T wave abnormality
+  		\item 2 = left ventricular hyperthrophy
+  	\end{itemize}
+  	
+  	\item \textbf{Max heart rate achieved:} displays the max heart rate achieved by an individual.
+  	\item \textbf{Exercise induced angina} :
+	  	\begin{itemize}
+  			\item 1 = yes
+  			\item 0 = no
+  		\end{itemize}
+  	
+  	\item \textbf{ST depression induced by exercise relative to rest:} displays the value which is an integer or float.
+  	
+  	\item \textbf{Peak exercise ST segment:}
+  		\begin{itemize}
+	  		\item 1 = upsloping
+  			\item 2 = flat
+  			\item 3 = downsloping
+ 	 	\end{itemize}
+  	
+  	\item \textbf{Number of major vessels (0–3) colored by flourosopy :} displays the value as integer or float.
+  	
+  	\item \textbf{Thal :} displays the thalassemia :
+  		\begin{itemize}
+  			\item 3 = normal
+  			\item 6 = fixed defect
+  			\item 7 = reversible defect
+  		\end{itemize}
+  	
+  	\item \textbf{Diagnosis of heart disease :} Displays whether the individual is suffering from heart disease or not :
+  	\begin{itemize}
+  		\item 0 = absent
+  		\item 1, 2, 3, 4 = present.
+  	\end{itemize}
+  	
+  \end{enumerate}
+  	
+  
+  	
+  		
 
 \end{document}
 

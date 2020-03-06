@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 14:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -261,21 +261,30 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 \c@subfigure=\count126
 \c@subtable=\count127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count128
+\float@exts=\toks22
+\float@box=\box56
+\@float@everytoks=\toks23
+\@floatcapt=\box57
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -312,17 +321,17 @@ LaTeX Font Info:    ... okay on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
+\scratchcounter=\count129
 \scratchdimen=\dimen147
-\scratchbox=\box56
-\nofMPsegments=\count129
-\nofMParguments=\count130
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count131
+\scratchbox=\box58
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count132
 \MPscratchDim=\dimen148
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -371,6 +380,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 Chapter 1.
@@ -378,31 +388,31 @@ Chapter 1.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
  [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 100--110
+Underfull \hbox (badness 10000) in paragraph at lines 105--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--110
+Underfull \hbox (badness 10000) in paragraph at lines 105--115
 
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 100--110
+Underfull \hbox (badness 1127) in paragraph at lines 105--115
 \OT1/cmr/m/n/10 clas-si-fier for pre-dic-tion of heart dis-ease. Al-go-rithm fo
 r our pro-posed model is shown be-low:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--110
+Underfull \hbox (badness 10000) in paragraph at lines 105--115
 
  []
 
@@ -410,10 +420,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--110
 <images/histogram.png, id=20, 469.755pt x 325.215pt>
 File: images/histogram.png Graphic file (type png)
 <use images/histogram.png>
-Package pdftex.def Info: images/histogram.png  used on input line 152.
+Package pdftex.def Info: images/histogram.png  used on input line 157.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 
-Overfull \hbox (14.45262pt too wide) in paragraph at lines 152--153
+Overfull \hbox (14.45262pt too wide) in paragraph at lines 157--158
 [][] 
  []
 
@@ -421,14 +431,14 @@ Overfull \hbox (14.45262pt too wide) in paragraph at lines 152--153
 <images/count.png, id=29, 361.35pt x 274.02374pt>
 File: images/count.png Graphic file (type png)
 <use images/count.png>
-Package pdftex.def Info: images/count.png  used on input line 164.
+Package pdftex.def Info: images/count.png  used on input line 169.
 (pdftex.def)             Requested size: 361.34912pt x 274.02307pt.
  [7 <./images/count.png>] [8]
 Chapter 2.
 <images/sdlc.png, id=38, 416.30531pt x 318.43968pt>
 File: images/sdlc.png Graphic file (type png)
 <use images/sdlc.png>
-Package pdftex.def Info: images/sdlc.png  used on input line 197.
+Package pdftex.def Info: images/sdlc.png  used on input line 202.
 (pdftex.def)             Requested size: 416.30429pt x 318.4389pt.
 [9
 
@@ -436,10 +446,10 @@ Package pdftex.def Info: images/sdlc.png  used on input line 197.
 <images/df.png, id=45, 475.7775pt x 500.46976pt>
 File: images/df.png Graphic file (type png)
 <use images/df.png>
-Package pdftex.def Info: images/df.png  used on input line 229.
+Package pdftex.def Info: images/df.png  used on input line 234.
 (pdftex.def)             Requested size: 475.77632pt x 500.46852pt.
 
-Overfull \hbox (20.47508pt too wide) in paragraph at lines 229--230
+Overfull \hbox (20.47508pt too wide) in paragraph at lines 234--235
 [][] 
  []
 
@@ -447,10 +457,10 @@ Overfull \hbox (20.47508pt too wide) in paragraph at lines 229--230
 <images/cycle.png, id=53, 508.90125pt x 340.27126pt>
 File: images/cycle.png Graphic file (type png)
 <use images/cycle.png>
-Package pdftex.def Info: images/cycle.png  used on input line 260.
+Package pdftex.def Info: images/cycle.png  used on input line 265.
 (pdftex.def)             Requested size: 508.90001pt x 340.27042pt.
 
-Overfull \hbox (53.59877pt too wide) in paragraph at lines 260--261
+Overfull \hbox (53.59877pt too wide) in paragraph at lines 265--266
 [][] 
  []
 
@@ -458,12 +468,12 @@ Overfull \hbox (53.59877pt too wide) in paragraph at lines 260--261
 <images/chotu.png, id=61, 307.1475pt x 139.27031pt>
 File: images/chotu.png Graphic file (type png)
 <use images/chotu.png>
-Package pdftex.def Info: images/chotu.png  used on input line 277.
+Package pdftex.def Info: images/chotu.png  used on input line 282.
 (pdftex.def)             Requested size: 307.14674pt x 139.26996pt.
 <images/animesh_chotu.png, id=62, 309.40594pt x 174.6525pt>
 File: images/animesh_chotu.png Graphic file (type png)
 <use images/animesh_chotu.png>
-Package pdftex.def Info: images/animesh_chotu.png  used on input line 305.
+Package pdftex.def Info: images/animesh_chotu.png  used on input line 310.
 (pdftex.def)             Requested size: 309.40518pt x 174.65207pt.
  [15 <./images/chotu.png>] [16 <./images/animesh_chotu.png>] [17] [18
 
@@ -472,79 +482,158 @@ Chapter 3.
 <images/home.png, id=77, 1434.86063pt x 638.385pt>
 File: images/home.png Graphic file (type png)
 <use images/home.png>
-Package pdftex.def Info: images/home.png  used on input line 349.
+Package pdftex.def Info: images/home.png  used on input line 355.
 (pdftex.def)             Requested size: 483.69684pt x 215.19724pt.
 
-Overfull \hbox (28.3956pt too wide) in paragraph at lines 349--351
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 355--359
  [] 
  []
 
 <images/features.png, id=78, 1439.3775pt x 609.77812pt>
 File: images/features.png Graphic file (type png)
 <use images/features.png>
-Package pdftex.def Info: images/features.png  used on input line 353.
+Package pdftex.def Info: images/features.png  used on input line 364.
 (pdftex.def)             Requested size: 483.69684pt x 204.91196pt.
 <images/feature-analysis.png, id=79, 1437.11906pt x 664.73344pt>
 File: images/feature-analysis.png Graphic file (type png)
 <use images/feature-analysis.png>
-Package pdftex.def Info: images/feature-analysis.png  used on input line 354.
+Package pdftex.def Info: images/feature-analysis.png  used on input line 365.
 (pdftex.def)             Requested size: 483.69684pt x 223.73434pt.
 
-Overfull \hbox (28.3956pt too wide) in paragraph at lines 353--357
- [][] 
- []
-
-
-Overfull \hbox (28.3956pt too wide) in paragraph at lines 353--357
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 364--366
  [] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 364--366
+ [] 
+ []
 
- [19 <./images/home.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <./images/features.png> <./images/feature-analysis.png>]
-<images/prediction-header.png, id=90, 1439.3775pt x 333.49594pt>
+<images/prediction-header.png, id=80, 935.74594pt x 355.3275pt>
 File: images/prediction-header.png Graphic file (type png)
 <use images/prediction-header.png>
-Package pdftex.def Info: images/prediction-header.png  used on input line 359.
-(pdftex.def)             Requested size: 483.69684pt x 112.06912pt.
-<images/prediction.png, id=91, 1440.13031pt x 654.94687pt>
+Package pdftex.def Info: images/prediction-header.png  used on input line 372.
+(pdftex.def)             Requested size: 483.69684pt x 183.67613pt.
+<images/prediction.png, id=81, 1017.8025pt x 618.05907pt>
 File: images/prediction.png Graphic file (type png)
 <use images/prediction.png>
-Package pdftex.def Info: images/prediction.png  used on input line 360.
-(pdftex.def)             Requested size: 483.69684pt x 219.9707pt.
+Package pdftex.def Info: images/prediction.png  used on input line 373.
+(pdftex.def)             Requested size: 483.69684pt x 293.72256pt.
 
-Overfull \hbox (28.3956pt too wide) in paragraph at lines 359--362
- [][] 
- []
-
-
-Overfull \hbox (28.3956pt too wide) in paragraph at lines 359--362
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 372--374
  [] 
  []
 
-[21 <./images/prediction-header.png> <./images/prediction.png>] (./report.aux) 
-) 
+
+Overfull \hbox (28.3956pt too wide) in paragraph at lines 372--374
+ [] 
+ []
+
+[19 <./images/home.png>] [20 <./images/features.png> <./images/feature-analysis
+.png>] [21 <./images/prediction-header.png> <./images/prediction.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 383--386
+
+ []
+
+<images/naive_bayes.png, id=97, 1069.9975pt x 523.9575pt>
+File: images/naive_bayes.png Graphic file (type png)
+<use images/naive_bayes.png>
+Package pdftex.def Info: images/naive_bayes.png  used on input line 390.
+(pdftex.def)             Requested size: 426.79134pt x 208.99565pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--397
+
+ []
+
+[22 <./images/naive_bayes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 402--405
+
+ []
+
+<images/decision_tree.png, id=102, 919.435pt x 907.39pt>
+File: images/decision_tree.png Graphic file (type png)
+<use images/decision_tree.png>
+Package pdftex.def Info: images/decision_tree.png  used on input line 408.
+(pdftex.def)             Requested size: 490.11815pt x 483.69684pt.
+
+Overfull \hbox (34.81691pt too wide) in paragraph at lines 408--409
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+
+ []
+
+<images/svm.png, id=103, 903.375pt x 883.3pt>
+File: images/svm.png Graphic file (type png)
+<use images/svm.png>
+Package pdftex.def Info: images/svm.png  used on input line 422.
+(pdftex.def)             Requested size: 398.33858pt x 389.48885pt.
+[23] [24 <./images/decision_tree.png>] [25 <./images/svm.png>]
+<images/logistic_regression.png, id=117, 825.0825pt x 1160.335pt>
+File: images/logistic_regression.png Graphic file (type png)
+<use images/logistic_regression.png>
+Package pdftex.def Info: images/logistic_regression.png  used on input line 440
+.
+(pdftex.def)             Requested size: 398.33858pt x 560.19453pt.
+ [26] [27 <./images/logistic_regression.png>]
+<images/knn.png, id=128, 728.7225pt x 983.675pt>
+File: images/knn.png Graphic file (type png)
+<use images/knn.png>
+Package pdftex.def Info: images/knn.png  used on input line 519.
+(pdftex.def)             Requested size: 426.79134pt x 576.1005pt.
+<images/mlpnn.png, id=129, 1025.8325pt x 590.205pt>
+File: images/mlpnn.png Graphic file (type png)
+<use images/mlpnn.png>
+Package pdftex.def Info: images/mlpnn.png  used on input line 530.
+(pdftex.def)             Requested size: 341.43306pt x 196.44333pt.
+ [28] [29 <./images/knn.png>] [30 <./images/mlpnn.png>]
+<images/backpropogation.png, id=139, 556.0775pt x 734.745pt>
+File: images/backpropogation.png Graphic file (type png)
+<use images/backpropogation.png>
+Package pdftex.def Info: images/backpropogation.png  used on input line 563.
+(pdftex.def)             Requested size: 227.62204pt x 300.75409pt.
+<images/neural_network.png, id=140, 396.48125pt x 513.92pt>
+File: images/neural_network.png Graphic file (type png)
+<use images/neural_network.png>
+Package pdftex.def Info: images/neural_network.png  used on input line 569.
+(pdftex.def)             Requested size: 284.5346pt x 569.10132pt.
+<images/hdDataset.png, id=141, 513.92pt x 203.76125pt>
+File: images/hdDataset.png Graphic file (type png)
+<use images/hdDataset.png>
+Package pdftex.def Info: images/hdDataset.png  used on input line 581.
+(pdftex.def)             Requested size: 426.79134pt x 169.21817pt.
+
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+ [31 <./images/backpropogation.png>] [32 <./images/neural_network.png>] [33 <./
+images/hdDataset.png>] [34] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 4738 strings out of 492615
- 69886 string characters out of 6131389
- 156960 words of memory out of 5000000
- 8584 multiletter control sequences out of 15000+600000
- 6424 words of font info for 23 fonts, out of 8000000 for 9000
+ 4838 strings out of 492615
+ 71680 string characters out of 6131389
+ 159333 words of memory out of 5000000
+ 8670 multiletter control sequences out of 15000+600000
+ 6878 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,38p,1700b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (21 pages, 1594733 bytes).
+ 41i,7n,39p,1700b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on report.pdf (34 pages, 2793428 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 198 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
