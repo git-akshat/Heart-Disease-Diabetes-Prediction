@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.10)  6 MAR 2020 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -588,52 +588,68 @@ File: images/mlpnn.png Graphic file (type png)
 <use images/mlpnn.png>
 Package pdftex.def Info: images/mlpnn.png  used on input line 530.
 (pdftex.def)             Requested size: 341.43306pt x 196.44333pt.
- [28] [29 <./images/knn.png>] [30 <./images/mlpnn.png>]
+ [28] [29 <./images/knn.png>]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [30 <./images/mlpnn.png>]
 <images/backpropogation.png, id=139, 556.0775pt x 734.745pt>
 File: images/backpropogation.png Graphic file (type png)
 <use images/backpropogation.png>
-Package pdftex.def Info: images/backpropogation.png  used on input line 563.
+Package pdftex.def Info: images/backpropogation.png  used on input line 564.
 (pdftex.def)             Requested size: 227.62204pt x 300.75409pt.
 <images/neural_network.png, id=140, 396.48125pt x 513.92pt>
 File: images/neural_network.png Graphic file (type png)
 <use images/neural_network.png>
-Package pdftex.def Info: images/neural_network.png  used on input line 569.
+Package pdftex.def Info: images/neural_network.png  used on input line 570.
 (pdftex.def)             Requested size: 284.5346pt x 569.10132pt.
-<images/hdDataset.png, id=141, 513.92pt x 203.76125pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./images/backpropogation.png>]
+<images/uml_diagram.png, id=145, 855.195pt x 492.33937pt>
+File: images/uml_diagram.png Graphic file (type png)
+<use images/uml_diagram.png>
+Package pdftex.def Info: images/uml_diagram.png  used on input line 595.
+(pdftex.def)             Requested size: 426.79134pt x 245.7033pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./images/neural_network.png>]
+<images/hdDataset.png, id=149, 513.92pt x 203.76125pt>
 File: images/hdDataset.png Graphic file (type png)
 <use images/hdDataset.png>
-Package pdftex.def Info: images/hdDataset.png  used on input line 581.
+Package pdftex.def Info: images/hdDataset.png  used on input line 615.
 (pdftex.def)             Requested size: 426.79134pt x 169.21817pt.
 
-Underfull \vbox (badness 4752) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31 <./images/backpropogation.png>] [32 <./images/neural_network.png>] [33 <./
-images/hdDataset.png>] [34] [35] (./report.aux) ) 
+ [33 <./images/uml_diagram.png>] [34 <./images/hdDataset.png>] [35] [36] (./rep
+ort.aux) ) 
 Here is how much of TeX's memory you used:
- 4838 strings out of 492615
- 71680 string characters out of 6131389
+ 4843 strings out of 492615
+ 71802 string characters out of 6131389
  159333 words of memory out of 5000000
- 8670 multiletter control sequences out of 15000+600000
+ 8674 multiletter control sequences out of 15000+600000
  6878 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,39p,1700b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report.pdf (35 pages, 2800086 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b>
+Output written on report.pdf (36 pages, 2836287 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
