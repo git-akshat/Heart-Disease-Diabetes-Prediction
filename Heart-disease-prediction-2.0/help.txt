@@ -1,0 +1,22 @@
+1. Install packages from package.txt file
+
+2. To create virtual env
+
+	python3 -m venv virtual-env
+
+3. To run virtual-env 
+	
+	source virtual-env/bin/activate
+
+3. To run server
+
+	python3 manage.py migrate
+	python3 manage.py runserver
+
+
+4. 127.0.0.1:8080
+
+
+5. To stop virtual-env
+	
+	deactivate
