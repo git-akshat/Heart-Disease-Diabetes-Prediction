@@ -33,15 +33,15 @@ sn.countplot(x='num',data=dataset)
 dataset.num.value_counts()
 
 
-# Fitting KNN to the Training set
-from sklearn.neighbors import KNeighborsRegressor
-classifier = KNeighborsClassifier(n_neighbors=5, weights='distance')
+# Fitting Naive Bayes to the Training set
+from sklearn.naive_bayes import GaussianNB
+classifier = GaussianNB()
 classifier.fit(X_train, y_train)
 
 from sklearn.externals import joblib
 
-# filename = 'knn.pkl'
-# joblib.dump(classifier,filename)
+#filename = 'naive_bayes_model.pkl'
+#joblib.dump(classifier,filename)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
@@ -82,7 +82,3 @@ plt.show()
 
 Newdataset = pd.read_csv('newdata.csv')
 ynew=classifier.predict(Newdataset)
-
-
-
-

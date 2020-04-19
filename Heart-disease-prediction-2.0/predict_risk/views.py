@@ -27,7 +27,7 @@ def PredictRisk(request,pk):
 
             standard_scalar = GetStandardScalarForHeart()
             features = standard_scalar.transform(features)
-            SVCClassifier,LogisticRegressionClassifier,NaiveBayesClassifier,DecisionTreeClassifier,KNeighborsClassifier=GetAllClassifiersForHeart()
+            SVCClassifier,LogisticRegressionClassifier,NaiveBayesClassifier,DecisionTreeClassifier,KNeighborsClassifier,NeuralNetworkClassifier=GetAllClassifiersForHeart()
 
 
             predictions = {'SVC': str(SVCClassifier.predict(features)[0]),
@@ -35,10 +35,11 @@ def PredictRisk(request,pk):
              'NaiveBayes': str(NaiveBayesClassifier.predict(features)[0]),
              'DecisionTree': str(DecisionTreeClassifier.predict(features)[0]),
              'KNN': str(KNeighborsClassifier.predict(features)[0]),
+             'NeuralNetwork': str(NeuralNetworkClassifier.predict(features)[0]),
               }
             pred = form.save(commit=False)
 
-            l=[predictions['SVC'],predictions['LogisticRegression'],predictions['NaiveBayes'],predictions['DecisionTree'],predictions['KNN']]
+            l=[predictions['SVC'],predictions['LogisticRegression'],predictions['NaiveBayes'],predictions['DecisionTree'],predictions['KNN'],predictions['NeuralNetworkClassifier']]
             count=l.count('1')
 
             result=False
@@ -80,6 +81,11 @@ def PredictRisk(request,pk):
                 colors['KNN']="table-success"
             else:
                 colors['KNN']="table-danger"
+
+            if predictions['NeuralNetwork']=='0':
+                colors['NeuralNetwork']="table-success"
+            else:
+                colors['NeuralNetwork']="table-danger"
 
     if predicted:
         return render(request, 'predict.html',
