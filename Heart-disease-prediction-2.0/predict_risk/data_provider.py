@@ -9,6 +9,7 @@ config = {
         'NaiveBayes': 'production/naive_bayes_model.pkl',
         'DecisionTree':'production/decision_tree_model.pkl',
         'scalar_file': 'production/standard_scalar.pkl',
+        'KNN': 'production/knn.pkl',
     }}
 
 dir = os.path.dirname(__file__)
@@ -27,7 +28,7 @@ def GetStandardScalarForHeart():
     return GetPickleFile(config['heart']['scalar_file'])
 
 def GetAllClassifiersForHeart():
-    return (GetSVCClassifierForHeart(),GetLogisticRegressionClassifierForHeart(),GetNaiveBayesClassifierForHeart(),GetDecisionTreeClassifierForHeart())
+    return (GetSVCClassifierForHeart(),GetLogisticRegressionClassifierForHeart(),GetNaiveBayesClassifierForHeart(),GetDecisionTreeClassifierForHeart(),GetKNeighborsClassifierForHeart())
 
 def GetSVCClassifierForHeart():
     return GetJobLibFile(config['heart']['SVC'])
@@ -40,3 +41,6 @@ def GetNaiveBayesClassifierForHeart():
 
 def GetDecisionTreeClassifierForHeart():
     return GetJobLibFile(config['heart']['DecisionTree'])
+
+def GetKNeighborsClassifierForHeart():
+    return GetJobLibFile(config['heart']['KNN'])
