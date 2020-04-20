@@ -40,8 +40,8 @@ classifier.fit(X_train, y_train)
 
 from sklearn.externals import joblib
 
-#filename = 'naive_bayes_model.pkl'
-#joblib.dump(classifier,filename)
+filename = 'neural_network.pkl'
+joblib.dump(classifier,filename)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)

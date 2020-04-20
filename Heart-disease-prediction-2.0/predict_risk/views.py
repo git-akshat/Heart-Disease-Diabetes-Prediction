@@ -39,7 +39,7 @@ def PredictRisk(request,pk):
               }
             pred = form.save(commit=False)
 
-            l=[predictions['SVC'],predictions['LogisticRegression'],predictions['NaiveBayes'],predictions['DecisionTree'],predictions['KNN'],predictions['NeuralNetworkClassifier']]
+            l=[predictions['SVC'],predictions['LogisticRegression'],predictions['NaiveBayes'],predictions['DecisionTree'],predictions['KNN'],predictions['NeuralNetwork']]
             count=l.count('1')
 
             result=False
