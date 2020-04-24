@@ -5,10 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-# Importing the dataset
-DIR='C:/Users/Mansi/Desktop/Heart_disease_prediction_project/predict_risk/machine_learning_models'
-
-dataset = pd.read_csv(DIR+'/HealthData.csv')
+dataset = pd.read_csv('/HealthData.csv')
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 13].values
 
