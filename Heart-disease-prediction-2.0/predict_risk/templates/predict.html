@@ -34,17 +34,17 @@
             </div>
         </div>
     </nav>
-  <h1>Predict your Heart disease</h1>
+<h1 style="font-family: '{% static 'fonts/Lobster-Regular.ttf' %}' "><b>Predict your Heart disease</b></h1>
   <div class="bg-agile">
     <div class="book-appointment">
-      <h2>Medical Information</h2>
+      <h2 style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'">Medical Information</h2>
       {% if predicted %}
       <div class="card" role="alert">
         <div class="header-main">
           {% if result %}
-          <h4 class="table-danger text-center">You have a risk of heart disease</h4>
+            <h4 class="table-danger text-center" style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}';"><b>You have a risk of heart disease</b></h4>
           {% else %}
-          <h4 class="table-success  text-center">You do not have a risk of heart disease</h4>
+            <h4 class="table-success  text-center" style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}';"><b>You do not have a risk of heart disease</b></h4>
           {% endif %}
         </div>
       <div class="card-body">
@@ -52,37 +52,36 @@
                        <table class="table">
                            <thead>
                                <tr>
-                                   <th>Algorithm</th>
-                                   <th>Risk of Heart Disease</th>
+                                   <th style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'" ><b>Algorithm</b></th>
+                                   <th style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Risk of Heart Disease</b></th>
                                </tr>
                            </thead>
                            <tbody>
                                <tr class="{{colors.LR}}">
-                                   <td>Logistic Regression</td>
-                                   <td>{{predictions.LogisticRegression}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Logistic Regression</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.LogisticRegression}}</b></td>
                                </tr>
                                <tr class={{colors.SVC}}>
-                                   <td>Support Vector Classifier</td>
-                                   <td>{{predictions.SVC}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Support Vector Classifier</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.SVC}}</b></td>
                                </tr>
                                <tr class={{colors.NB}}>
-                                   <td>Naive Bayes</td>
-                                   <td>{{predictions.NaiveBayes}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Naive Bayes</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.NaiveBayes}}</b></td>
                                </tr>
                                <tr class={{colors.DT}}>
-                                   <td>Decision Tree</td>
-                                   <td>{{predictions.DecisionTree}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Decision Tree</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.DecisionTree}}</b></td>
                                </tr>
                                <tr class={{colors.DT}}>
-                                   <td>K Nearest Neighbour</td>
-                                   <td>{{predictions.KNN}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>K Nearest Neighbour</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.KNN}}</b></td>
                                </tr>
                                <tr class={{colors.DT}}>
-                                   <td>Neural Network</td>
-                                   <td>{{predictions.NeuralNetwork}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Neural Network</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.NeuralNetwork}}</b></td>
                                </tr>
                            </tbody>
-
                        </table>
                    </div>
                </div>
@@ -92,7 +91,7 @@
 
       <form method="post">
         {% csrf_token %}
-        <div class="left-agileits-w3layouts same">
+        <div class="left-agileits-w3layouts same" style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}">
           <div class="gaps">
             <p>Age<p>
             {{form.age}}
@@ -145,7 +144,7 @@
 
         </div>
 
-        <div class="right-agileinfo same">
+        <div class="right-agileinfo same" style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}">
 
           <div class="gaps">
             <p>Slope of the peak exercise ST segment </p>
