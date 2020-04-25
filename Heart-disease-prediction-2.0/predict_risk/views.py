@@ -57,7 +57,6 @@ def heart(request,pk):
             predicted = True
 
             colors={}
-
             if predictions['SVC']=='0':
                 predictions['SVC']='Negative'
                 colors['SVC']="table-success"
