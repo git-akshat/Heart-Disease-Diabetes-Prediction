@@ -1,84 +1,136 @@
-# Importing the libraries
+"""
+Variables to be manually initialised:
+    - lmbda
+    - epsilon
+    - hidden_layer_size
+    - K
+"""
+
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
+from scipy import optimize
+from sklearn.preprocessing import scale
+from sklearn import metrics
 
-# Importing the dataset
-dataset = pd.read_csv('HealthData.csv')
-X = dataset.iloc[:,:-1].values
-y = dataset.iloc[:, 13].values
+def featureNormalize(z):
+    return scale(z)
 
-#handling missing data
+def sigmoid(z):
+    r = 1.0 / (1.0 + np.exp(-z))
+    return r
 
-from sklearn.preprocessing import Imputer
-imputer=Imputer(missing_values='NaN',strategy='mean',axis=0)
-imputer=imputer.fit(X[:,11:13])
-X[:,11:13]=imputer.transform(X[:,11:13])
+def sigmoidGrad(z):
+    r = sigmoid(z)
+    r = r * (1.0 - r)
+    return r
 
+def randomizeTheta(l, epsilon):
+    return ((np.random.random((l, 1)) * 2 * epsilon) - epsilon)
 
+def KFoldDiv(X, y, m, n, K):
+    sz = int(np.ceil(m / K))
+    if n == 1:
+        X_train = X[sz:, :]
+        X_test = X[:sz, :]
+        y_train = y[sz:]
+        y_test = y[:sz]
+    elif n == K:
+        X_train = X[:((n-1)*sz), :]
+        X_test = X[((n-1)*sz):, :]
+        y_train = y[:((n-1)*sz)]
+        y_test = y[((n-1)*sz):]
+    else:
+        X_train = np.vstack((X[:((n-1)*sz), :], X[(n*sz):, :]))
+        X_test = X[((n-1)*sz):(n*sz), :]
+        y_train = np.vstack((y[:((n-1)*sz)], y[(n*sz):]))
+        y_test = y[((n-1)*sz):(n*sz)]
+    return (X_train, y_train, X_test, y_test)
 
-# Splitting the dataset into the Training set and Test set
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.15, random_state = 0)
+def nnCostFunc(Theta, input_layer_size, hidden_layer_size, num_labels, X, y, lmbda):
+    Theta1, Theta2 = np.split(Theta, [hidden_layer_size * (input_layer_size+1)])
+    Theta1 = np.reshape(Theta1, (hidden_layer_size, input_layer_size+1))
+    Theta2 = np.reshape(Theta2, (num_labels, hidden_layer_size+1))
+    m = X.shape[0]
+    y = (y == np.array([(i+1) for i in range(num_labels)])).astype(int)
 
-# Feature Scaling
-from sklearn.preprocessing import StandardScaler
-sc = StandardScaler()
-X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_test)
+    a1 = np.hstack((np.ones((m, 1)), X))
+    z2 = np.dot(a1, Theta1.T)
+    a2 = np.hstack((np.ones((m, 1)), sigmoid(z2)))
+    h = sigmoid(np.dot(a2, Theta2.T))
 
-#EXPLORING THE DATASET
-import seaborn as sn
-sn.countplot(x='num',data=dataset)
-dataset.num.value_counts()
+    cost = ((lmbda/2)*(np.sum(Theta1[:, 1:] ** 2) + np.sum(Theta2[:, 1:] ** 2)) - np.sum((y * np.log(h)) + ((1-y) * np.log(1-h)))) / m
+    return cost
 
+def nnGrad(Theta, input_layer_size, hidden_layer_size, num_labels, X, y, lmbda):
+    Theta1, Theta2 = np.split(Theta, [hidden_layer_size * (input_layer_size+1)])
+    Theta1 = np.reshape(Theta1, (hidden_layer_size, input_layer_size+1))
+    Theta2 = np.reshape(Theta2, (num_labels, hidden_layer_size+1))
+    m = X.shape[0]
+    y = (y == np.array([(i+1) for i in range(num_labels)])).astype(int)
 
-# Fitting Naive Bayes to the Training set
-from sklearn.naive_bayes import GaussianNB
-classifier = GaussianNB()
-classifier.fit(X_train, y_train)
+    a1 = np.hstack((np.ones((m, 1)), X))
+    z2 = np.dot(a1, Theta1.T)
+    a2 = np.hstack((np.ones((m, 1)), sigmoid(z2)))
+    h = sigmoid(np.dot(a2, Theta2.T))
 
-from sklearn.externals import joblib
+    delta_3 = h - y
+    delta_2 = np.dot(delta_3, Theta2[:, 1:]) * sigmoidGrad(z2)
+    Theta2_grad = (np.dot(delta_3.T, a2) + (lmbda * np.hstack((np.zeros((Theta2.shape[0], 1)), Theta2[:, 1:])))) / m
+    Theta1_grad = (np.dot(delta_2.T, a1) + (lmbda * np.hstack((np.zeros((Theta1.shape[0], 1)), Theta1[:, 1:])))) / m
 
-filename = 'neural_network.pkl'
-joblib.dump(classifier,filename)
-
-# Predicting the Test set results
-y_pred = classifier.predict(X_test)
-
-#ACCURACY SCORE
-from sklearn.metrics import accuracy_score
-accuracy_score(y_test,y_pred)
-
-# Making the Confusion Matrix
-from sklearn.metrics import confusion_matrix
-cm = confusion_matrix(y_test, y_pred)
-
-
-#Interpretation:
-from sklearn.metrics import classification_report
-print(classification_report(y_test, y_pred))
-
-
-#ROC
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import roc_curve
-logit_roc_auc = roc_auc_score(y_test, classifier.predict(X_test))
-fpr, tpr, thresholds = roc_curve(y_test, classifier.predict_proba(X_test)[:,1])
-plt.figure()
-plt.plot(fpr, tpr, label='Logistic Regression (area = %0.2f)' % logit_roc_auc)
-plt.plot([0, 1], [0, 1],'r--')
-plt.xlim([0.0, 1.0])
-plt.ylim([0.0, 1.05])
-plt.xlabel('False Positive Rate')
-plt.ylabel('True Positive Rate')
-plt.title('Receiver operating characteristic')
-plt.legend(loc="lower right")
-plt.savefig('Log_ROC')
-plt.show()
+    grad = np.hstack((Theta1_grad.flatten(), Theta2_grad.flatten()))
+    return grad
 
 
-##PREDICTION FOR NEW DATASET
+K = 10
+lmbda = 0.03
+epsilon = 0.12
 
-Newdataset = pd.read_csv('newdata.csv')
-ynew=classifier.predict(Newdataset)
+input_layer_size = 13
+hidden_layer_size = 20
+num_labels = 2
+
+X = np.genfromtxt('heart.csv', delimiter=',')
+m, n = X.shape
+n -= 1
+
+y = X[:, n].astype(int).reshape((m, 1))
+X = featureNormalize(X[:, :n])
+foldAcc = np.ndarray((K, 1))
+
+FP = 0
+FN = 0
+TN = 0
+TP = 0
+
+for i in range(K):
+    X_train, y_train, X_test, y_test = KFoldDiv(X, y, m, i+1, K)
+    
+    initTheta = randomizeTheta((hidden_layer_size * (input_layer_size+1)) + (num_labels * (hidden_layer_size+1)), epsilon)
+    Theta = optimize.fmin_bfgs(nnCostFunc, initTheta, fprime=nnGrad, args=(input_layer_size, hidden_layer_size, num_labels, X_train, y_train, lmbda), maxiter=3000)
+    Theta1, Theta2 = np.split(Theta, [hidden_layer_size * (input_layer_size+1)])
+    Theta1 = np.reshape(Theta1, (hidden_layer_size, input_layer_size+1))
+    Theta2 = np.reshape(Theta2, (num_labels, hidden_layer_size+1))
+
+    h1 = sigmoid(np.dot(np.hstack((np.ones((X_test.shape[0], 1)), X_test)), Theta1.T))
+    h2 = sigmoid(np.dot(np.hstack((np.ones((h1.shape[0], 1)), h1)), Theta2.T))
+    predicted = h2.argmax(1) + 1
+    predicted = predicted.reshape((predicted.shape[0], 1))
+    foldAcc[i] = np.mean((predicted == y_test).astype(float)) * 100
+
+    cm = (metrics.confusion_matrix(y_test, predicted))/len(y_test)
+
+    FP += cm[0][0]
+    FN += cm[1][0]
+    TN += cm[0][1]
+    TP += cm[1][1]
+
+    print('Test Set Accuracy for %dth fold: %f\n' % (i+1, foldAcc[i]))
+
+meanAcc = np.mean(foldAcc)
+print('\nAverage Accuracy: ', meanAcc)
+print("")
+
+print(FP)
+print(FN)
+print(TN)
+print(TP)

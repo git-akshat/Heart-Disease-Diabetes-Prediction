@@ -13,11 +13,11 @@ class UserForm(forms.ModelForm):
 
     password = forms.CharField(widget=forms.PasswordInput(
         attrs={'class': 'form-control', 'placeholder': 'Enter password'}
-    ), required=True, max_length=50)
+    ), required=True, min_length=6, max_length=50)
 
     confirm_password = forms.CharField(widget=forms.PasswordInput(
         attrs={'class': 'form-control', 'placeholder': 'Confirm password'}
-    ), required=True, max_length=50)
+    ), required=True, min_length=6, max_length=50)
 
     class Meta:
         model = User

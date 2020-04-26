@@ -18,7 +18,33 @@ def user_logout(request):
     return HttpResponseRedirect(reverse('user_login'))
 
 class Aboutpageview(TemplateView):
-    template_name='accounts/about.html';
+    login_url = '/'
+    redirect_field_name = '/'
+    model = UserProfileInfo
+    template_name = 'accounts/about.html'
+
+    def get_context_data(self, **kwargs):
+        if self.request.session.has_key('user_id'):
+            u_id = self.request.session['user_id']
+            context = super(Aboutpageview, self).get_context_data(**kwargs)
+            context['user_id'] = u_id
+            return context
+
+def loginHomePage(request):
+    if request.session.has_key('user_id'):
+        u_id = request.session['user_id']
+
+    return render(request,
+                  'about',
+                  {
+                      'user_id':u_id
+                  })
+
+def loadHomePage(request):
+    if request.session.has_key('user_id'):
+        loginHomePage(request)
+    else:
+        return homePage(request)
 
 
 def register(request):
@@ -71,8 +97,11 @@ def user_login(request):
             if user.is_active:
                 login(request, user)
                 request.session['user_id'] = user.profile.pk
+                user_id = user.profile.pk
 
-                return HttpResponseRedirect(reverse('predict:predict', kwargs={'pk': user.profile.pk}))
+                return render(request, 'accounts/description.html',
+                              {'user_id':user_id})
+                #return HttpResponseRedirect(reverse('predict:description', kwargs={'pk': user.profile.pk}))
             else:
                 return HttpResponse("Account not active")
         else:
@@ -89,10 +118,32 @@ class ProfileDetailView(LoginRequiredMixin, DetailView):
     model = UserProfileInfo
     template_name = 'accounts/profileview.html'
 
-    def get_context_data(self, **kwargs):
+    def get_context_data(self, **kwargs):           
         if self.request.session.has_key('user_id'):
             u_id = self.request.session['user_id']
             context = super(ProfileDetailView, self).get_context_data(**kwargs)
             context['user_id'] = u_id
 
         return context
+
+def description(request,pk):
+    # if self.request.session.has_key('user_id'):
+    #     u_id = self.request.session['user_id']
+    #     context = super(ProfileDetailView, self).get_context_data(**kwargs)
+    #     context['user_id'] = u_id
+
+    # return HttpResponseRedirect(reverse('predict:description', kwargs={'pk': user.profile.pk}))
+    if request.session.has_key('user_id'):
+        u_id = request.session['user_id']
+
+    return render(request,
+                  'predict:description',
+                  {
+                      'user_id':u_id
+                  })
+
+def heart(request,pk):
+    return HttpResponseRedirect(reverse('predict:heart', kwargs={'pk': user.profile.pk}))
+
+def homePage(request):
+    return render(request,'accounts/home.html',{})
