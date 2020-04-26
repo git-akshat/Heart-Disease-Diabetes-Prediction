@@ -17,6 +17,7 @@
     <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
     <link href="{% static 'css/now-ui-kit.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{% static 'css/medium-editor.min.css' %}" rel="stylesheet">
     <!--//fonts-->
 </head>
@@ -94,22 +95,22 @@
             {% csrf_token %}
             <div class="left-agileits-w3layouts same">
                 <div class="gaps">
-                    <p>Pregnancies<p>
+                    <p>Pregnancies&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title=" Number of times pregnant "></i></p>
                     {{form.pregnancies}}
                 </div>
 
                 <div class="gaps">
-                    <p>Glucose</p>
+                    <p>Glucose&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Plasma glucose concentration a 2 hours in an oral glucose tolerance test"></i></p>
                     {{form.glucose}}
                 </div>
 
                 <div class="gaps">
-                    <p>Blood Pressure</p>
+                    <p>Blood Pressure&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Diastolic blood pressure (mm Hg)"></i></p>
                     {{form.bloodpressure}}
                 </div>
 
                 <div class="gaps">
-                    <p>Skin Thickness</p>
+                    <p>Skin Thickness&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Triceps skin fold thickness (mm)"></i></p>
                     {{form.skinthickness}}
                 </div>
 
@@ -117,22 +118,22 @@
                 <div class="right-agileinfo same">
 
                     <div class="gaps">
-                        <p>Insulin</p>
+                        <p>Insulin&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="2-Hour serum insulin (mu U/ml)"></i></p>
                         {{form.insulin}}
                     </div>
 
                     <div class="gaps">
-                        <p>BMI</p>
+                        <p>BMI&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Body mass index (weight in kg/(height in m)^2)"></i></p>
                         {{form.bmi}}
                     </div>
 
                     <div class="gaps">
-                        <p>Diabetes Prediction Function</p>
+                        <p>Diabetes Pedigree Function&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Diabetes pedigree function "></i></p>
                         {{form.pedigree}}
                     </div>
 
                     <div class="gaps">
-                        <p>Age</p>
+                        <p>Age&nbsp;&nbsp;<i class="fa fa-info-circle" style="font-size:15px;" data-toggle="tooltip" data-html="true" title="Age (years)"></i></p>
                         {{form.age}}
                     </div>
 
