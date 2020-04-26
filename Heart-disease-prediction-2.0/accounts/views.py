@@ -28,8 +28,7 @@ class Aboutpageview(TemplateView):
             u_id = self.request.session['user_id']
             context = super(Aboutpageview, self).get_context_data(**kwargs)
             context['user_id'] = u_id
-
-        return context
+            return context
 
 def loginHomePage(request):
     if request.session.has_key('user_id'):
