@@ -1,5 +1,6 @@
 from django import forms
 from predict_risk.models import Predictions
+from predict_risk.models import PredictionsDiabetes
 
 class Predict_Form(forms.ModelForm):
     class Meta:
@@ -20,3 +21,18 @@ class Predict_Form(forms.ModelForm):
                    'number_of_vessels':forms.Select(attrs={'class': 'form-control'}),
                    'thallium_scan_results':forms.Select(attrs={'class': 'form-control'}),
                    }
+
+
+class Predict_Diabetes_Form(forms.ModelForm):
+  class Meta:
+      model = PredictionsDiabetes
+      fields = ('pregnancies','glucose','bloodpressure','skinthickness','insulin','bmi','pedigree','age')
+      widgets = {'pregnancies': forms.TextInput(attrs={'class': 'form-control'}),
+                  'glucose':forms.TextInput(attrs={'class': 'form-control'}),
+                  'bloodpressure':forms.TextInput(attrs={'class': 'form-control'}),
+                  'skinthickness':forms.TextInput(attrs={'class': 'form-control'}),
+                  'insulin':forms.TextInput(attrs={'class': 'form-control'}),
+                  'bmi':forms.TextInput(attrs={'class': 'form-control'}),
+                  'pedigree':forms.TextInput(attrs={'class': 'form-control'}),
+                  'age':forms.TextInput(attrs={'class': 'form-control'}),
+                  }

@@ -22,68 +22,66 @@
 </head>
 <body>
 <!--background-->
-<nav class="navbar navbar-expand-lg navbar-transparent" >
+  <nav class="navbar navbar-expand-lg navbar-transparent" >
         <div class="container">
             <div class="collapse navbar-collapse justify-content-end" id="navigation" >
                 <ul class="navbar-nav nav-tabs">
-
+                    <li class="nav-item"><a href="{% url 'about' %}" class="btn btn-neutral">Home</a></li>
+                    <li class="nav-item"><a href="{% url 'predict:diabetes' pk=user_id %}" class="btn btn-neutral">Diabetes</a></li>
                     <li class="nav-item"><a href="{% url 'accounts:profile' pk=user_id %}" class="btn btn-neutral">Profile</a></li>
-                      <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="btn btn-neutral">Logout</a></li>
-
+                    <li class="nav-item"><a href="{% url 'accounts:logout' %}" class="btn btn-neutral">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-<h1>Predict your Heart disease</h1>
-    <div class="bg-agile">
-	<div class="book-appointment">
-	<h2>Medical Information</h2>
-
-  {% if predicted %}
-<div class="card" role="alert">
-<div class="header-main">
-{% if result %}
-<h4 class="table-danger text-center">You have a risk of heart disease</h4>
-{% else %}
-<h4 class="table-success  text-center">You do not have a risk of heart disease</h4>
-{% endif %}
-</div>
-<div class="card-body">
+<h1 style="font-family: '{% static 'fonts/Lobster-Regular.ttf' %}' "><b>Predict your Heart disease</b></h1>
+  <div class="bg-agile">
+    <div class="book-appointment">
+      <h2 style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'">Medical Information</h2>
+      {% if predicted %}
+      <div class="card" role="alert">
+        <div class="header-main">
+          {% if result %}
+            <h4 class="table-danger text-center" style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}';"><b>You have a risk of heart disease</b></h4>
+          {% else %}
+            <h4 class="table-success  text-center" style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}';"><b>You do not have a risk of heart disease</b></h4>
+          {% endif %}
+        </div>
+      <div class="card-body">
       <div class="table-responsive justify-content-center">
                        <table class="table">
                            <thead>
                                <tr>
-                                   <th>Algorithm</th>
-                                   <th>Risk of Heart Disease</th>
+                                   <th style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'" ><b>Algorithm</b></th>
+                                   <th style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Risk of Heart Disease</b></th>
                                </tr>
                            </thead>
                            <tbody>
                                <tr class="{{colors.LR}}">
-                                   <td>Logistic Regression</td>
-                                   <td>{{predictions.LogisticRegression}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Logistic Regression</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.LogisticRegression}}</b></td>
                                </tr>
                                <tr class={{colors.SVC}}>
-                                   <td>Support Vector Classifier</td>
-                                   <td>{{predictions.SVC}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Support Vector Classifier</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.SVC}}</b></td>
                                </tr>
                                <tr class={{colors.NB}}>
-                                   <td>Naive Bayes</td>
-                                   <td>{{predictions.NaiveBayes}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Naive Bayes</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.NaiveBayes}}</b></td>
                                </tr>
                                <tr class={{colors.DT}}>
-                                   <td>Decision Tree</td>
-                                   <td>{{predictions.DecisionTree}}</td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Decision Tree</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.DecisionTree}}</b></td>
                                </tr>
-                               <tr class={{colors.DT}}>
-                                   <td>K Nearest Neighbour</td>
-                                   <td>{{predictions.KNN}}</td>
+                               <tr class={{colors.KNN}}>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>K Nearest Neighbour</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.KNN}}</b></td>
                                </tr>
-                               <tr class={{colors.DT}}>
-                                   <td>Neural Network</td>
-                                   <td>{{predictions.NeuralNetwork}}</td>
+                               <tr class={{colors.NeuralNetwork}}>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Bold.ttf' %}'"><b>Neural Network</b></td>
+                                   <td style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}'"><b>{{predictions.NeuralNetwork}}</b></td>
                                </tr>
                            </tbody>
-
                        </table>
                    </div>
                </div>
@@ -91,67 +89,67 @@
 
   {% endif %}
 
-			<form method="post">
+      <form method="post">
         {% csrf_token %}
-        <div class="left-agileits-w3layouts same">
+        <div class="left-agileits-w3layouts same" style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}">
           <div class="gaps">
             <p>Age<p>
             {{form.age}}
           </div>
 
-					<div class="gaps">
-						<p>Gender</p>
-							{{form.sex}}
-					</div>
+          <div class="gaps">
+            <p>Gender</p>
+              {{form.sex}}
+          </div>
 
           <div class="gaps">
             <p>Chest Pain</p>
               {{form.cp}}
           </div>
 
-					<div class="gaps">
-						<p>Resting BP</p>
-							{{form.resting_bp}}
-					</div>
-
-					<div class="gaps">
-						<p>Serum Cholestrol</p>
-							{{form.serum_cholesterol}}
-					</div>
-
-					<div class="gaps">
-						<p>Fasting Blood Sugar</p>
-						   {{form.fasting_blood_sugar}}
-					</div>
-
-					<div class="gaps">
-						<p>Resting  Electrocardiographic Result</p>
-						{{form.resting_ecg}}
-					</div>
-
-					<div class="gaps">
-						<p>Maximum Heart Rate</p>
-						{{form.max_heart_rate}}
-					</div>
-
-					<div class="gaps">
-						<p>Excercise Induced Angina</p>
-						{{form.exercise_induced_angina}}
-					</div>
-
-					<div class="gaps">
-						<p>ST Depression</p>
-						{{form.st_depression}}
-					</div>
-
-				</div>
-
-				<div class="right-agileinfo same">
+          <div class="gaps">
+            <p>Resting BP</p>
+              {{form.resting_bp}}
+          </div>
 
           <div class="gaps">
-						<p>Slope of the peak exercise ST segment </p>
-				      {{form.st_slope}}
-					</div>
+            <p>Serum Cholestrol</p>
+              {{form.serum_cholesterol}}
+          </div>
+
+          <div class="gaps">
+            <p>Fasting Blood Sugar</p>
+               {{form.fasting_blood_sugar}}
+          </div>
+
+          <div class="gaps">
+            <p>Resting  Electrocardiographic Result</p>
+            {{form.resting_ecg}}
+          </div>
+
+          <div class="gaps">
+            <p>Maximum Heart Rate</p>
+            {{form.max_heart_rate}}
+          </div>
+
+          <div class="gaps">
+            <p>Excercise Induced Angina</p>
+            {{form.exercise_induced_angina}}
+          </div>
+
+          <div class="gaps">
+            <p>ST Depression</p>
+            {{form.st_depression}}
+          </div>
+
+        </div>
+
+        <div class="right-agileinfo same" style="font-family: '{% static 'fonts/AmaticSC-Regular.ttf' %}">
+
+          <div class="gaps">
+            <p>Slope of the peak exercise ST segment </p>
+              {{form.st_slope}}
+          </div>
 
           <div class="gaps">
             <p>Number of major vessels (0-3) colored by flourosopy</p>
@@ -163,22 +161,22 @@
               {{form.thallium_scan_results}}
           </div>
 
-				</div>
+        </div>
 
-				<div class="clear"></div>
-				<input type="submit" value="Predict" class="btn btn-primary">
-			</form>
-		</div>
+        <div class="clear"></div>
+        <input type="submit" value="Predict" class="btn btn-primary">
+      </form>
+    </div>
    </div>
    <!--copyright-->
 
-		<!--//copyright-->
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-		<!-- Calendar -->
-				<link rel="stylesheet" href="css/jquery-ui.css" />
-				<script src="js/jquery-ui.js"></script>
+    <!--//copyright-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- Calendar -->
+        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <script src="js/jquery-ui.js"></script>
 
-			<!-- //Calendar -->
+      <!-- //Calendar -->
 
 </body>
 </html>

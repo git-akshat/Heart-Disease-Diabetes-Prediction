@@ -34,12 +34,12 @@ dataset.num.value_counts()
 
 # Fitting Decision Tree Classification to the Training set
 from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=5)
+classifier = KNeighborsClassifier(n_neighbors=8)
 classifier.fit(X_train, y_train)
 
-# from sklearn.externals import joblib
-# filename = 'knn.pkl'
-# joblib.dump(classifier,filename)
+from sklearn.externals import joblib
+filename = 'knn.pkl'
+joblib.dump(classifier,filename)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)

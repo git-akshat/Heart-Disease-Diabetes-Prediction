@@ -25,8 +25,9 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$',views.user_login,name='user_login'),
-    url(r'^about/',Aboutpageview.as_view(),name='about'),
+    url(r'^$',Aboutpageview.as_view(),name='about'),
+    url(r'^login/',views.user_login,name='user_login'),
+    url(r'^home/',views.homePage,name='home'),
     url(r'^accounts/',include('accounts.urls')),
     url(r'^predict/',include('predict_risk.urls')),
 ]

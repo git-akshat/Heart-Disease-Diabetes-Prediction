@@ -19,9 +19,14 @@
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="">
                 <ul class="nav nav-tabs" data-tabs="tabs">
 
-
                     <li class="nav-item">
-                        <a href="{% url 'predict:predict' pk=user_id %}" class="btn btn-neutral">Predict</a>
+                        <a href="{% url 'about' %}" class="btn btn-neutral">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'predict:diabetes' pk=user_id %}" class="btn btn-neutral">Diabetes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'predict:heart' pk=user_id %}" class="btn btn-neutral">Heart</a>
                     </li>
                     <li class="nav-item">
                       <a href="{% url 'accounts:logout'%}"  class="btn btn-neutral">Logout</a>

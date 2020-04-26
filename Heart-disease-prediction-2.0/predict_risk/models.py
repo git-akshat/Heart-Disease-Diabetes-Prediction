@@ -6,7 +6,7 @@ from django.urls import reverse
 sex_choices=((0, 'Female'),(1, 'Male'))
 cp_choice=((0,'None'),(1, 'Typical Angina'),(2, 'Atypical Angina'),(3, 'Non-Angina'),(4, 'Asymptomatic'))
 fasting_blood_sugar_choices=((1,'> 120 mg/dl'),((0,'< 120 mg/dl')))
-resting_ecg_choices=((0, 'Normal'),(1, 'Having ST-T wave abnormality'),(2, 'hypertrophy'))
+resting_ecg_choices=((0, 'Normal'),(1, 'Having ST-T wave abnormality'),(2, 'Hypertrophy'))
 exercise_induced_angina_choices=((0, 'No'),(1, 'Yes'))
 st_slope_choices=((1, 'Upsloping'),(2, 'Flat'),(3, 'Down Sloping'))
 number_of_vessels_choices=((0, 'None'),(1, 'One'),(2, 'Two'),(3, 'Three'))
@@ -29,6 +29,20 @@ class Predictions(models.Model):
     thallium_scan_results = models.IntegerField(choices=thallium_scan_results_choices)
     predicted_on = models.DateTimeField(default=timezone.now)
     num=models.IntegerField()
+
+    def get_absolute_url(self):
+        return reverse('predict:predict', kwargs={'pk': self.profile.pk})
+
+class PredictionsDiabetes(models.Model):
+    profile = models.ForeignKey(UserProfileInfo, on_delete=models.CASCADE, related_name='predict_diabetes')
+    pregnancies = models.IntegerField()
+    glucose = models.IntegerField()
+    bloodpressure = models.IntegerField()
+    skinthickness = models.IntegerField()
+    insulin = models.IntegerField()
+    bmi = models.IntegerField()
+    pedigree = models.IntegerField()
+    age = models.IntegerField()
 
     def get_absolute_url(self):
         return reverse('predict:predict', kwargs={'pk': self.profile.pk})
