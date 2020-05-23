@@ -120,7 +120,7 @@
     \section{Background Study}
     \subsection{Motivation}
 
-    The principle inspiration for doing this project is to introduce a prediction model for the prediction of the occurrence of diabetes and heart disease. Further, this undertaking work is pointed towards distinguishing the best classification method for recognizing the chance of heart disease or diabetes in a patient. This work is justified by playing out a similar report and analysis utilizing some machine learning algorithms for classification namely Naïve Bayes, Decision Tree, K-Nearest Neighbors, Logistic Regression, Support Vector Classifier and Neural Networks. Despite the fact that these are normally utilized machine learning algorithms, disease prediction is an vital task including the most highest possible exactness. Subsequently, the three algorithmic methods are assessed at various levels and sorts of classification strategies. This will give scientists and clinical experts to set up a superior understanding and assist them with recognizing an answer for distinguish the best technique for anticipating heart sicknesses as well as the chance of diabetes.
+    The principle inspiration for doing this project is to introduce a prediction model for the prediction of the occurrence of diabetes and heart disease. Further, this undertaking work is pointed towards distinguishing the best classification method for recognizing the chance of heart disease or diabetes in a patient. This work is justified by playing out a similar report and analysis utilizing some machine learning algorithms for classification namely Naive Bayes, Decision Tree, K-Nearest Neighbors, Logistic Regression, Support Vector Classifier and Neural Networks. Despite the fact that these are normally utilized machine learning algorithms, disease prediction is an vital task including the most highest possible exactness. Subsequently, the three algorithmic methods are assessed at various levels and sorts of classification strategies. This will give scientists and clinical experts to set up a superior understanding and assist them with recognizing an answer for distinguish the best technique for anticipating heart sicknesses as well as the chance of diabetes.
     \paragraph{}
     A key challenging task confronting healthcare organisation (emergency clinics, clinical focuses) is the facility of quality administrations at reasonable costs. Quality amenities recommend diagnosing patients precisely and controlling medications that are compelling. Poor clinical decisions can result in deplorable outcomes, which are as such unsatisfactory. Medical clinics should limit the expense of clinical tests. They can achieve these results by using fitting PC based information and additionally choice emotionally supportive networks. The heart is a essential bit of our body. Life is itself dependent on successful working of the heart. In the task in which the undertaking of the heart isn't real, it will impact the other body parts of human, for instance, cerebrum, kidney, etc. Coronary ailment is an sickness that impacts on the action of the heart.
     \paragraph{}
@@ -522,11 +522,12 @@
     	\subsection{Economic feasibility} 
     	The project is economically feasible as the cost of the project is included uniquely in the deployment of the web-app. As the information tests expands, which devour additional time and handling power. All things considered, a superior processor may be required.
     	
-    	\chapter{Detailed Design}
-    	This section will cover the design of our model in detail. Firstly with interface design that will provide a detailed explanation about the interface design, and then with the Data Structure and Algorithms that have been used in the project. The whole detailed system design with use case has been shown in Fig 3.1.
+	
+	\chapter{Detailed Design}
+    	This section will cover the plan of our model in detail. Right off the bat with an interface plan that will give a nitty gritty clarification about the interface plan, and afterward with the Data Structure and Algorithms that have been utilized in the project. The entire point by point system plan with use case has been appeared in Fig 3.1.
     	
     	\section{Interface Design}
-    	This section describes about the user’s interaction with the interface. The inter-face designs/screen-shots have been added in order to give a better view of the user Interface.
+    	This section depicts the client's connection with the interface. The between face plans/screen-shots have been included a request to give a superior perspective on the user interface.
     	
     	
     		\begin{center}
@@ -602,12 +603,14 @@
     
     \pagebreak
     \section{Data Structures and Algorithms}
-    	This section deals with data structure and algorithms we have used in our project.
+    	This section manages data structure and algorithms we have utilized in our project.
     	
     \subsection{Naive Bayes Classifier}
-    	Naive Bayes classifiers are a group of straightforward probabilistic classifiers based by utilizing Bayes theorem with solid (naive) independence assumptions between the highlights. Naive Bayes classifiers are exceptionally versatile by requiring various parameters direct for the number of highlights or indicators as a variable in a learning issue. It is the least complex and the quickest probabilistic classifier, particularly for the preparation stage.\\
-    	Naive Bayes classifier is based on Bayes theorem. This classifier uses conditional independence in which attribute value is independent of the values of other attributes. The Bayes theorem is as follows:
-    	Let X= {x1, x2, ......, Xn} be a set of n attributes. In Bayesian, X is considered as evidence and H be some hypothesis means, the data of X belongs to specific class C. We have to determine P (H|X), the probability that the hypothesis H holds given evidence i.e. data sample X. According to Bayes theorem the P (H|X) is expressed as: \\
+    	Naive Bayes classifiers are a gathering of straightforward probabilistic classifiers based by using Bayes theorem with strong (naive) freedom suppositions between the features. Naive Bayes classifiers are incredibly flexible by requiring different parameters direct for the number of features or pointers as a variable in a learning issue. It is the least perplexing and the snappiest probabilistic classifier, especially for the planning stage.\\ 
+    	
+    	Naive Bayes classifier depends on Bayes theorem. This classifier utilizes restrictive autonomy wherein characteristic worth is autonomous of the estimations of different qualities. The Bayes theorem is as per the following: 
+    	
+    	Let X= {x1, x2, ......, Xn} be a lot of n qualities. In Bayesian learning, X is considered as proof and H be some speculation implies, the data of X has a place with explicit class C. We need to decide P (H|X), the likelihood that the speculation H holds given proof, for example, data test X. As indicated by Bayes theorem the P (H|X) is communicated as: \\
     	\[P(H|X) = \frac{P(X|H) * P(H)}{P(X)}\].
     	
     	\begin{figure}[h]
@@ -617,16 +620,19 @@
     		\end{center}
     	\end{figure}
     	
-       	Utilizing Bayesian classifiers, the framework will find the hidden information related to diseases from authentic records of the patients having heart disease. Bayesian classifiers anticipate the class participation probabilities, such that the likelihood of a given example has a place with a specific class factually. A Bayesian classifier depends on Bayes' theorem. We can utilize Bayes theorem to decide the likelihood that a proposed analysis is right, given the perception. A basic probabilistic, the naive Bayes classifier is utilized for grouping dependent on which depends on Bayes' theorem. As per Naive Bayesian classifier, the event or an event of a specific element of a class is considered as independent in the occurrence or nonoccurrence of some other element. At the point when the element of the sources of info is the high and progressively productive outcome is normal, the boss Naive Bayes Classifier method is appropriate. The Naive Bayes model distinguishes the physical attributes and highlights of patients experiencing heart disease. For each info, it gives the chance of a property of the worthy state. Naive Bayes is a measurable classifier which expects no reliance between properties. This classifier calculation utilizes conditional independence, implies it accept that a quality estimation of a given class is independent of the values of other attributes. The benefit of utilizing Naive Bayes is that one can work with the Naive Bayes model without using any Bayesian methods. (Brownlee, 2016). \\
-    	P (Disease|symptom1, symptom2, ..., symptomn) P(Disease)P(symptom1, ..., symptomn|Disease) = P(symptom1, symptom2, ...symptomnN).\\
+       	Utilizing Bayesian classifiers, the framework will find the hidden information related to diseases from authentic records of the patients having heart disease. Bayesian classifiers anticipate the class participation probabilities, such that the likelihood of a given example has a place with a specific class factually. A Bayesian classifier depends on Bayes' theorem. We can utilize Bayes theorem to decide the likelihood that a proposed analysis is right, given the perception. A basic probabilistic, the naive Bayes classifier is utilized for grouping dependent on which depends on Bayes' theorem. As per Naive Bayesian classifier, the event or an event of a specific element of a class is considered as independent in the occurrence or nonoccurrence of some other element. At the point when the element of the sources of info is the high and progressively productive outcome is normal, the boss Naive Bayes Classifier method is appropriate. The Naive Bayes model distinguishes the physical attributes and highlights of patients experiencing heart disease. For each info, it gives the chance of a property of the worthy state. Naive Bayes is a measurable classifier which expects no reliance between properties. This classifier calculation utilizes conditional independence, implies it accept that a quality estimation of a given class is free of the estimations of different qualities. The advantage of using Naive Bayes is that one can work with the Naive Bayes model without utilizing any Bayesian strategies. (Brownlee, 2016). \\ 
+       	
+       	P (Disease|symptom1, symptom2, ..., symptomn) P(Disease)P(symptom1, ..., symptomn|Disease) = P(symptom1, symptom2, ...symptomnN).\\
     	
     	
     
     
     	\subsection{Decision Tree}
-    	Decision tree learning utilizes a decision tree as a predictive model which maps perceptions about an item to decisions about the item's target. It is one of the predictive modelling approaches utilized in measurements, information mining and Artificial Intelligence. Tree models where the objective variable can take a finite set of values are called classification trees. In these tree structures, leaves speak to class marks and branches speak to conjunctions of highlights that lead to those class names. Decision trees where the objective variable can take continuous values (ordinarily genuine numbers) are called regression trees. In decision tree analysis, a decision tree can be utilized to outwardly and expressly speak to decisions and decision making. In information mining, a decision tree depicts data but not decisions; rather the subsequent classification tree can be a contribution for decision making.\\
-    	The classification tree makes a tree with branches, nodes, and leaves that let us take an unknown data point and descend the tree, applying the traits of the information point to the tree until a leaf is reached and the unknown output of the information point can be determined. To make a decent classification tree model, we have to have a current informational index with known output from which we can build our model. We additionally partition our informational collection into two sections: a training set, which is utilized to build the model, and a test set, which is utilized to check that the model is precise and not overfitted. \\
-    	This classifier creates a decision tree based on which it assigns the class values to each data point. Here, we can vary the maximum number of features to be considered while creating the model.\\
+    	Decision tree learning uses a decision tree as a prescient model which maps discernments about a thing to decisions about the thing's objective. It is one of the prescient demonstrating approaches used in estimations, data mining and Artificial Intelligence. Tree models where the target variable can take a limited arrangement of values are called characterization trees. In these tree structures, leaves address class stamps and branches address conjunctions of features that lead to those class names. Decision trees where the target variable can take ceaseless values (customarily real numbers) are called regression trees. In decision tree analysis, a decision tree can be used to apparently and explicitly address decisions and decision making. In data mining, a decision tree portrays data yet not decisions; rather the resulting characterization tree can be a commitment for decision making.\\ 
+    	
+    	The order tree makes a tree with branches, nodes, and leaves that let us take an obscure data point and plunge the tree, applying the attributes of the data point to the tree until a leaf is reached and the obscure yield of the data point can be resolved. To make a not too bad grouping tree model, we must have a current educational file with known yield from which we can manufacture our model. We also parcel our enlightening assortment into two sections: a preparation set, which is used to construct the model, and a test set, which is used to watch that the model is exact and not overfitted. \\ 
+    	
+    	This classifier makes a decision tree dependent on which it doles out the class values to every datum point. Here, we can fluctuate the most extreme number of highlights to be thought of while making the model.\\
     	
     		\begin{figure}
     		\begin{center}
@@ -655,9 +661,11 @@
     	
     	
     	\subsection{Logistic Regression}
-    	Logistic Regression is a statistical analysis technique that is used for predicting the data value based on the prior observation of the data set. The logistic regression model predicts the dependent data variable by analyzing the relationship between one or more existing independent variables. Logistic Regression is one of the important tools for prediction, which can also be used for classifying and predicting the data based on the historical data. The implemented model is a binary Logistic model that has dependent variables with only two possible outcomes i.e., one is a positive value and another one is the negative value which is having 0 or 1 as a class label.
-    	It mainly consists of two major phases: regularized cost function and regularized gradient descent. Cost Function is used for calculating the maximum likelihood estimation. Gradient descent is an iterative process for getting coefficients from training
-    	data. The process is repeated until we get the optimal parameters of train data. The model is trained with the optimal coefficient.Whenever a test data has been passed to the model based on the parameters is able to identify whether the person is having heart disease or not, it tests the data using the sigmoid function. The cost function is the method that is used for reducing the errors of the predicted label and the actual label. Gradient descent function is the method that is used for calculating the coefficient until we obtain a minimum value of the class label.
+    	Logistic Regression is a statistical analysis procedure that is utilized for foreseeing the data esteem dependent on the earlier perception of the data set. The logistic regression model predicts the needy data variable by examining the connection between at least one existing free factors. Logistic Regression is one of the significant instruments for forecast, which can likewise be utilized for characterizing and foreseeing the data dependent on the historical data. The actualized model is a twofold Logistic model that has subordinate factors with just two potential results i.e., one is a positive worth and another is the negative worth which is having 0 or 1 as a class mark.\\ 
+    	
+    	It for the most part comprises of two significant stages: regularized cost work and regularized angle plummet. Cost Function is utilized for ascertaining the greatest probability estimation. Angle plummet is an iterative procedure for getting coefficients from preparing \\
+    	
+    	data. The procedure is rehashed until we get the ideal parameters of train data. The model is prepared with the ideal coefficient.Whenever a test data has been passed to the model dependent on the parameters can recognize whether the individual is having coronary illness or not, it tests the data utilizing the sigmoid capacity. The cost work is the technique that is utilized for decreasing the mistakes of the anticipated name and the genuine mark. Slope plunge work is the technique that is utilized for computing the coefficient until we get a base estimation of the class mark.\\
     	
     		
     	\begin{figure}
@@ -668,65 +676,51 @@
     	\end{figure}
     	
     	\subsubsection{Cost Function}
-    		A minimization function is utilized that is the cost function. It utilizes the Log Loss, for example, the logarithmic loss which quantifies the exhibition of the model where the forecast input esteem is the likelihood between the zero and one. The Log loss is the vulnerability of the forecast which depends on the amount it fluctuates from the real name. Cost function which encourages the learner to address or change the conduct to minimize the errors. The cost function can be assessed by iteratively running the model to look at the predicted value and the known or actual value. The regularized cost function is a technique that is utilized for surviving the danger of overfitting. Lamda is the parameter which controls the regularization term.\\
+    		A minimisation work is used that is the cost work. It uses the Log Loss, for instance, the logarithmic misfortune which evaluates the presence of the model where the figure input regard is the probability between the zero and one. The Log loss is the vulnerability of the forecast which relies upon the sum it changes from the genuine name. Cost work which urges the student to address or change the direction to limit the mistakes. The cost capacity can be surveyed by iteratively running the model to take a gander at the anticipated worth and the known or real worth. The regularized cost work is a method that is used for enduring the risk of overfitting. Lamda is the parameter which controls the regularization term.\\
     		The cost function is calculated by the following:
     		\[ J(\theta) = \frac{1}{m}\sum_{i=1}^{m} y^{(i)} \log[h_\theta(x^{(i)}) - (1-y^{(i)}) \log(1-h_\theta(x^{(i)})] + \frac{\lambda}{2m}\sum_{i=1}^{n}{\theta_j}^2 \] \\
-    		m = number of instances \\
-    		n = number of attributes \\
-    		y = class label \\
-    		x = train data features\\
+    		m = The number of instances \\
+    		n = The number of attributes \\
+    		y = The Class label \\
+    		x = Features of the training data\\
     		$\theta$ = coefficients \\ 
-    		$\lambda$ =learning rate
+    		$\lambda$ = learning rate
     	
     	
     	\subsubsection{Gradient Descent}
-    		Gradient descent is an optimization method which is used to find 
-    		the parameters or  the  coefficient  of  the  cost  function.  Gradient 
-    		descent is  a  repeated  process  in  order  to  get  the  coefficients  to 
-    		minimize the cost function. The  Gradient  descent  is  calculated 
-    		for both the classes to get the pair of a coefficient for both class 
-    		labels. The goal here is to continue the procedure to try the different 
-    		value for the coefficient, evaluating their cost  and selecting the new coefficient that is having the slightly lower cost. Considering this coefficient and storing them in the model. Gradient descent 
-    		is calculates as the following:
+    		Gradient descent is an advanced strategy which is utilized to discover the parameters or the coefficient of the cost function. Gradient the descent is a rehashed procedure so as to get the coefficients to limit the cost function. The Gradient descent is determined for both the classes to get the pair of a coefficient for both classes marks. The objective here is to proceed with the strategy to attempt the unique esteem for the coefficient, assessing their cost and choosing the new coefficient that is having the somewhat lower cost. Thinking about this coefficient and putting away them in the model. Gradient descent is calculated as follows:
     		\[ \theta_{ji} = \theta_j - \frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^i)-(y^i)) {x_j}^i + \frac{\lambda}{m} \theta_j \]\\
-    		m = number of instances \\
-    		x = train data features \\
-    		y = class label \\
+    		m = The number of instances \\
+    		x = Features of the training data \\
+    		y = The class label \\
     		$\theta$ = coefficients \\
-    		$\lambda$ = learning rate 
+    		$\lambda$ = Learning rate 
     		
     		
     
     	\subsubsection{Sigmoid Function}
-    		Sigmoid function is the logistic function between. This takes the 
-    		real input vales and output values between the 0 and 1 for logistic 
-    		function [12]. This is interpreted as taking log odds and having 
-    		the output probability. Generally sigmoid function is used to map 
-    		predictions to probability it is defined as:
+    		The sigmoid function is the logistic function between. This takes genuine information vales and yield values between the 0 and 1 for logistic function [12]. This is deciphered as taking log chances and having the yield probability. For the most part, the sigmoid function is utilized to delineate to the probability it is characterized as:
     		\[ h_\theta(x) = \frac{1}{1 + e^{-\theta^{T.x}}} \]\\
     		x = test data features \\
-    		$\theta$ = coefficients 
-    		Whenever a  test  data is passed it calculates  the  value based on 
-    		the parameters stored in the model. It calculates the probability 
-    		of each class label. We return the maximum probability value of 
-    		the class label $x_i$.\\
-    		The test data contains the thirteen attributes that we need to pass 
-    		and calculate   for both  the classes it will return  the two values 
-    		we take the maximum value of two values we will return the class 
-    		label which is having the maximum probability.
+    		$\theta$ = coefficients \\
+    		At whatever point a test data is passed it figures the worth dependent on the parameters put away in the model. It computes the probability of each class label. We return the most extreme probability estimation of the class label $x_i$.\\ 
+    		
+    		The test data contains the thirteen ascribes that we have to pass and compute for both the classes it will restore the two values we take the most extreme estimation of two values we will restore the class with a label which is having the greatest probability.
     	
     	
     	
     		
     		\subsection{K-Nearest Neighbour}  
-    		K-Nearest neighbor (KNN) is a simple, lazy and nonparametric classifier. KNN is preferred when all the features are continuous. KNN is also called case-based reasoning and has been used in many applications like pattern recognition, statistical estimation. Classification is obtained by identifying the nearest neighbor to determine the class of an unknown sample. KNN is preferred over other classification algorithms due to its high convergence speed and simplicity.\\
-    		KNN classification has two stages
+    		K-Nearest Neighbor (KNN) is a straightforward, lazy and nonparametric classifier. KNN is favoured when all the highlights are consistent. KNN is additionally called case-based thinking and has been utilized in numerous applications like example acknowledgement, statistical estimation. Classification is acquired by distinguishing the nearest neighbour to decide the class of an obscure example. KNN is favoured over other classification algorithms because of its high combination speed and simplicity.\\ 
+    		
+    		KNN classification has two phases:
     		\begin{enumerate}
     			\item Find the k number of instances in the dataset that is closest to instance S
     			\item These k number of instances then vote to determine the class of instance S
     		\end{enumerate}
-    		The Accuracy of KNN depends on distance metric and K value. Various ways of measuring the distance between two instances are cosine, Euclidean distance. To evaluate the new unknown sample, KNN computes its K nearest neighbors and assign a class by majority voting.\\    		
-    		With KNN algorithm, we have chance to change the parameter's weight. It means that, we may assume that some parameters are more important or making more impact than others. Among 8 parameters we use, we can categorize them our data into 2 categories, one is "non-medical" parameters (Age and Sex) and the other is "medical" parameters (CP, Trestbps, Trestbpd etc). We may think that medical parameters are more important than non medical, which we will see in experimental results. Along with weighting, we should find the value of "k" so it gives the best classification result. Since it is a 2-choice classification ("yes") and (“No”) k will be an odd number.
+    		The Accuracy of KNN relies upon separation metric and K esteem. Different methods of estimating the separation between the two cases are cosine, Euclidean separation. To assess the new obscure example, KNN processes its K nearest neighbours and dole out a class by greater part voting.\\ 
+    		
+    		With the KNN algorithm, we have the opportunity to change the parameter's weight. It implies that we may accept that a few parameters are more significant or having more effect than others. Among 8 parameters we use, we can classify them our data into 2 classifications, one is "non-clinical" parameters (Age and Sex) and the other is "clinical" parameters (CP, Trestbps, Trestbpd and so forth). We may feel that clinical parameters are a higher priority than non-clinical, which we will see in test results. Alongside weighting, we should discover the estimation of "k" so it gives the best classification result. Since it is a 2-decision classification ("yes") and ("No") k will be an odd number.
     		
     		\begin{figure}
     			\begin{center}
@@ -745,33 +739,30 @@
   				\caption{Neural Network}
   			\end{center}
   		\end{figure}
-  		The MLPNN consists of one input layer, one output layer and one or more hidden layers.Each layer consists of one or more nodes, represented by small circles. The lines between nodes indicate flow of information from one node to another node. The input layer receives signals from external nodes. The output of input layer is given to hidden layer, through weighted connection links. It performs computations and transmits the result to output layer through weighted links. The output of hidden layer is forwarded to output layer, it performs computations and produce final result. The working of multilayer perceptron neural network is summarized in steps as mentioned
-  		Below:
+  		The MLPNN comprises of one input layer, one output layer and at least one hidden layers. Each layer comprises of at least one hubs, spoke to by little circles. The lines between hubs demonstrate stream of data starting with one hub then onto the next hub. The input layer gets signals from outside hubs. The output of input layer is given to hidden layer, through weighted association joins. It performs calculations and transmits the outcome to output layer through weighted connections. The output of hidden layer is sent to output layer, it performs calculations and produce final outcome. The working of multilayer perceptron neural system is summed up in ventures as referenced below:
   		\begin{enumerate}
-  			\item Input data  is provided to input layer for processing, which  produces a
-  			predicted output.
-  			\item The predicted output is subtracted from actual output and error value is
-  			calculated.
-  			\item  The network then  uses a  Backpropagation algorithm  which  adjusts the
-  			weights.
-  			\item For weights adjusting it starts from weights between output layer nodes
-  			and last hidden layer nodes and works backwards through network.
-  			\item When back propagation is finished, the forwarding process starts again.
-  			\item The process is repeated until the error between predicted and actual output
-  			is minimized.
+  			\item Input data is given to the input layer to handling, which creates an anticipated output. 
+  			
+  			\item The anticipated output is deducted from the real output and blunder esteem is determined. 
+  			
+  			\item The system at that point utilizes a Backpropagation algorithm which changes the loads. 
+  			
+  			\item For loads modifying it begins from loads between output layer nodes, what's more, last hidden layer hubs and works in reverse through the system. 
+  			
+  			\item When back engendering is done, the sending procedure begins once more. 
+  			
+  			\item The procedure is rehashed until the blunder among the anticipated and real output is limited.
   		\end{enumerate}
   	\pagebreak
   	
   	\subsubsection{Backpropagation network}
-  	The most widely used training algorithm for multilayer and feed forward network is
-  	Backpropagation. The name given is back propagation because it calculates the difference between actual and predicted values is propagated from output nodes backwards to nodes in previous layer. This is done to improve weights during processing.The working of Backpropagation algorithm is summarized in steps as follows:
+  	The most broadly utilized preparing algorithm for multilayer and feed-forward system is Backpropagation. The name given is backpropagation since it computes the distinction among real and anticipated values is proliferated from output hubs in reverse to hubs in the past layer. This is done to improve loads during handling. The working of the Backpropagation algorithm is summed up in ventures as follows:
   	\begin{enumerate}
-  		\item Provide training data to the network.
-  		\item Compare the actual and desired output.
-  		\item Calculate the error in each neuron. 
-  		\item Calculate what output should be for each neuron and how much lower or
-  		higher output must be adjusted for desired output.
-  		\item Then adjust the weights
+  		\item Provide preparing data to the network. 
+  		\item Compare the genuine and wanted output. 
+  		\item Calculate the mistake in every neuron. 
+  		\item Calculate what output ought to be for every neuron and how much lower or higher output must be balanced for wanted output. 
+  		\item Then alter the loads
   	\end{enumerate}
   
   \begin{figure}
@@ -789,22 +780,11 @@
 \end{figure}
 
 	\section{UML diagrams with discussions} 
-	UML is well known for its diagrammatic documentations(Refer Fig 3.10). As a whole 
-	realize that UML is for envisioning, indicating, building and recording the segments 
-	of programming and non-programming frameworks. Thus, perception is the most 
-	critical part which should be comprehended and recollected. UML documentations 
-	are the most critical components in demonstrating. Effective and suitable utilization 
-	of documentations is imperative for making a total and significant model. The model 
-	is pointless, except if its motivation is portrayed legitimately. Consequently, taking 
-	in documentations ought to be underlined from the earliest starting point. Diverse 
-	documentations are accessible for things and connections. UML graphs are made 
-	utilizing the documentations of things and connections. Extensibility is another essential component which makes UML all the more dominant and adaptable. The 
-	model’s UML also is quite intuitive and self explanatory, this UML have clear and 
-	distinct classes which makes it easily understandable
+	UML is notable for its diagrammatic documentation(Refer Fig 3.10). All in all understand that UML is for imagining, demonstrating, building and recording the portions of programming and non-programming structures. In this way, recognition is the most basic part which ought to be grasped and remembered. UML documentation is the most basic components in illustrating. Viable and reasonable use of documentations is basic for making aggregate and huge model. The model is trivial, with the exception of if its inspiration is depicted really. Subsequently, taking in documentations should be underlined from the most punctual beginning stage. Various documentation is available to things and associations. UML charts are made using the documentations of things and associations. Extensibility is another fundamental part which makes UML even more prevailing and versatile. The model's UML additionally is very instinctive and plain as day, this UML have clear and particular classes which makes it effectively justifiable
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/uml_diagram.png}
-			\caption{UML sequence diagram}
+			\caption{UML Sequence Diagram}
 		\end{center}
 	\end{figure}
 	
@@ -818,22 +798,21 @@
 
 
   	
-  	\section{Data Source/Database used and Formats}
+  	\section{Data Source and Formats}
   	\subsection{Heart Disease DataSet}
-  	The dataset used in this project is the Cleveland Heart Disease dataset taken 
-  	from the UCI repository.
+  	The dataset used in this project is the Cleveland Heart Disease dataset taken from the UCI repository.
   	\begin{center}
   		\includegraphics[width=15cm]{images/hdDataset.png}
   	\end{center}
   
-  The dataset consists of 303 individuals data. There are 14 columns in the dataset, which    are described below.
+  The dataset consists of 303 data points. There are 14 features in the dataset, which are described below.
   \begin{enumerate}
-  	\item\textbf{Age:} displays the age of the individual.
+  	\item\textbf{Age:} It consists of the age of the individual.
   	
-  	\item \textbf{Sex:} displays the gender of the individual using the following format :
+  	\item \textbf{Sex:} Shows the gender of the individual in the following format:
   		\begin{itemize}
-  			\item 1 = male
-  			\item 0 = female
+  			\item 1 = Male
+  			\item 0 = Female
   		\end{itemize}
   	
   	\item \textbf{Chest-pain type:} displays the type of chest-pain experienced by the individual using the following format :
@@ -844,7 +823,7 @@
   			\item 4 = asymptotic
   		\end{itemize}
   
-  	\item \textbf{Resting Blood Pressure}: displays the resting blood pressure value of an individual in mmHg (unit)
+  	\item \textbf{Resting Blood Pressure}: displays the blood pressure value of an individual in mmHg (unit)
   	
   	\item \textbf{Serum} Cholestrol: displays the serum cholesterol in mg/dl (unit)
   	
@@ -898,24 +877,24 @@
 	In the actual dataset, we had 76 features but for our study, we chose only the above 14 because :
 	
 	\begin{enumerate}
-		\item \textbf{Age:} Age is the most important risk factor in developing cardiovascular or heart diseases, with approximately a tripling of risk with each decade of life. Coronary fatty streaks can begin to form in adolescence. It is estimated that 82 percent of people who die of coronary heart disease are 65 and older. Simultaneously, the risk of stroke doubles every decade after age 55.
+		\item \textbf{Age:} Age is the most significant hazard factor in creating cardiovascular or heart ailments, with roughly a significantly increasing of hazard with every time of life. Coronary greasy streaks can start to shape in immaturity. It is assessed that 82 per cent of individuals who pass on of coronary illness are 65 and more established. At the same time, the danger of stroke pairs each decade after age 55.
 		
-		\item \textbf{Sex:} Men are at greater risk of heart disease than pre-menopausal women. Once past menopause, it has been argued that a woman’s risk is similar to a man’s although more recent data from the WHO and UN disputes this. If a female has diabetes, she is more likely to develop heart disease than a male with diabetes.
-		Angina (Chest Pain): Angina is chest pain or discomfort caused when your heart muscle doesn’t get enough oxygen-rich blood. It may feel like pressure or squeezing in your chest. The discomfort also can occur in your shoulders, arms, neck, jaw, or back. Angina pain may even feel like indigestion.
+		\item \textbf{Sex:} Men are at more serious danger of coronary illness than pre-menopausal ladies. Once past menopause, it has been contended that a lady's hazard is like a man's albeit later data from the WHO and UN questions this. On the off chance that a female has diabetes, she is bound to create coronary illness than a male with diabetes. 
+		Angina (Chest Pain): Angina is chest torment or uneasiness caused when your heart muscle doesn't get enough oxygen-rich blood. It might feel like a weight or pressing in your chest. The distress likewise can happen in your shoulders, arms, neck, jaw, or back. Angina torment may even feel like heartburn.
 	
-		\item \textbf{Resting Blood Pressure:} Over time, high blood pressure can damage arteries that feed your heart. High blood pressure that occurs with other conditions, such as obesity, high cholesterol or diabetes, increases your risk even more.
+		\item \textbf{Resting Blood Pressure:} After some time, high blood pressure can damage supply routes that feed your heart. Hypertension that happens with different conditions, for example, stoutness, elevated cholesterol or diabetes, increases your risk significantly more.
 		
-		\item \textbf{Serum Cholesterol:} A high level of low-density lipoprotein (LDL) cholesterol (the “bad” cholesterol) is most likely to narrow arteries. A high level of triglycerides, a type of blood fat related to your diet, also ups your risk of a heart attack. However, a high level of high-density lipoprotein (HDL) cholesterol (the “good” cholesterol) lowers your risk of a heart attack.
+		\item \textbf{Serum Cholesterol:} An elevated level of low-thickness lipoprotein (LDL) cholesterol (the "bad" cholesterol) is well on the way to limit conduits. A significant level of triglycerides, a sort of blood fat identified with your eating routine, likewise ups your danger of coronary failure. In any case, a significant level of high-thickness lipoprotein (HDL) cholesterol (the "great" cholesterol) brings down your danger of cardiovascular failure.
 		
-		\item \textbf{Fasting Blood Sugar:} Not producing enough of a hormone secreted by your pancreas (insulin) or not responding to insulin properly causes your body’s blood sugar levels to rise, increasing your risk of a heart attack.
+		\item \textbf{Fasting Blood Sugar:}Not delivering a sufficient hormone emitted by your pancreas (insulin) or not reacting to insulin appropriately causes your body's glucose levels to rise, expanding your danger of cardiovascular failure.
 		
-		\item \textbf{Resting ECG:} For people at low risk of cardiovascular disease, the USPSTF concludes with moderate certainty that the potential harms of screening with resting or exercise ECG equal or exceed the potential benefits. For people at intermediate to high risk, current evidence is insufficient to assess the balance of benefits and harms of screening.
+		\item \textbf{Resting ECG:} For individuals at generally safe of cardiovascular illness, the USPSTF finishes up with moderate conviction that the potential damages of screening with resting or exercise ECG approach or surpass the potential advantages. For individuals at middle of the road to high hazard, current proof is deficient to evaluate the parity of advantages and damages of screening.
 		
-		\item \textbf{Max heart rate achieved:} The increase in cardiovascular risk, associated with the acceleration of heart rate, was comparable to the increase in risk observed with high blood pressure. It has been shown that an increase in heart rate by 10 beats per minute was associated with an increase in the risk of cardiac death by at least 20\%, and this increase in the risk is similar to the one observed with an increase in systolic blood pressure by 10 mm Hg.
+		\item \textbf{Max heart rate achieved:} The expansion in cardiovascular hazard, related to the quickening of the pulse, was similar to the increment in chance saw with hypertension. It has been demonstrated that an expansion in pulse by 10 beats for each moment was related with an increment in the danger of cardiovascular passing by in any event 20\%, and this increment in the hazard is like the one saw with an increment in systolic blood pressure by 10 mm Hg.
 		
-		\item \textbf{Exercise induced angina:} The pain or discomfort associated with angina usually feels tight, gripping or squeezing, and can vary from mild to severe. Angina is usually felt in the center of your chest but may spread to either or both of your shoulders, or your back, neck, jaw or arm. It can even be felt in your hands. o Types of Angina a. Stable Angina / Angina Pectoris b. Unstable Angina c. Variant (Prinzmetal) Angina d. Microvascular Angina.
+		\item \textbf{Exercise induced angina:} The pain or uneasiness related to angina, for the most part, feels tight, grasping or pressing, and can fluctuate from gentle to extreme. Angina is normally felt in the focal point of your chest however may spread to either or both of your shoulders, or your back, neck, jaw or arm. It can even be felt in your grasp. o Types of Angina a. Stable Angina/Angina Pectoris b. Flimsy Angina c. Variation (Prinzmetal) Angina d. Microvascular Angina.
 		
-		\item \textbf{Peak exercise ST segment:} A treadmill ECG stress test is considered abnormal when there is a horizontal or down-sloping ST-segment depression $\geq$ 1 mm at 60–80 ms after the J point. Exercise ECGs with up-sloping ST-segment depressions are typically reported as an ‘equivocal’ test. In general, the occurrence of horizontal or down-sloping ST-segment depression at a lower workload (calculated in METs) or heart rate indicates a worse prognosis and higher likelihood of multi-vessel disease. The duration of ST-segment depression is also important, as prolonged recovery after peak stress is consistent with a positive treadmill ECG stress test. Another finding that is highly indicative of significant CAD is the occurrence of ST-segment elevation > 1 mm (often suggesting transmural ischemia); these patients are frequently referred urgently for coronary angiography.
+		\item \textbf{Peak exercise ST segment:} A treadmill ECG stress test is viewed as anomalous when there is an even or down-slanting ST-section melancholy $\geq$ 1 mm at 60–80 ms after the J point. Exercise ECGs with up-slanting ST-section miseries are commonly revealed as a 'dubious' test. All in all, the event of flat or down-inclining ST-portion sadness at a lower outstanding task at hand (determined in METs) or pulse shows a more awful guess and a higher probability of multi-vessel malady. The length of ST-portion wretchedness is likewise significant, as drawn-out recuperation after pinnacle pressure is steady with a positive treadmill ECG stress test. Another finding that is profoundly demonstrative of huge CAD is the event of ST-fragment rise > 1 mm (regularly proposing transmural ischemia); these patients often allude desperately for coronary angiography.
 	\end{enumerate}
 
 	\subsection{Diabetes DataSet}
@@ -1012,7 +991,7 @@ HTML components are the structure squares of HTML pages. With HTML develops, pic
 	The code integration has been done using GIT as the version control. The python code has been well packed in modules which has provided ease of integration. The HTML forms are provided by means of python class by creating object for each input entity and adding constraints to those classes which makes the HTML page dynamic and easy to adapt new changes. The project is designed in such a way that files names and location are specified through regex. The modules are enclosed in packages which increase the readability and simplicity of code. The machine learning algorithms uses a file to read new data provided by user and to predict the result. This prediction result is passed to the prediction page through a data provider class. The prediction data is stored in database for keeping track of predictions.
 	
 	\section{Implementation work flow}
-	Implementation takes into account type of algorithm used in the project, its efficiency, so that the use of the most possible efficient algorithm can be used, based on the use case, design and the development team. This project has been built over similar definition of implementation, wherein each aspect of implementation has been taken care of, right from the design of the UI to database, algorithms to api . A particular design pattern has been followed to promote scalability and proper maintenance of the code. The work flow starts right from the design implementation and ends on code implementation. Algorithm has been used which calculates the possibility of diseases based on the details provided by the patient. Authentication and validation of user data has been taken into account and all the history of searches made are stored in the database with timestamp.
+	Implementation considers sort of calculation utilized in the task, its proficiency, with the goal that the utilization of the most conceivable proficient algorithms can be utilized, in view of the utilization case, designers and the developers group. This undertaking has been worked over comparative meaning of usage, wherein every part of execution has been dealt with, directly from the structure of the UI to database, calculations to programming interface . A specific structure design has been followed to advance adaptability and legitimate support of the code. The work process begins directly from the plan execution and finishes on code usage. Algorithms has been utilized which figures the chance of sicknesses dependent on the input gave by the patient. Authentication and validation of client information has been considered and all the historical backdrop of searches made are put away in the database with timestamp.
 	\subsection{Data cleaning}
 	data cleaning tasks using Python’s Pandas library. Specifically, we’ve focus on probably the biggest data cleaning task, missing values.
 	\subsubsection{Sources of Missing Values}
@@ -1024,7 +1003,7 @@ HTML components are the structure squares of HTML pages. With HTML develops, pic
 	\end{itemize}
 	If we take a look at the coloums of dataset,we can see that Pandas filled in the blank space with “NA”. Using the isnull() method, we can confirm that both the missing value and “NA” were recognized as missing values. Both boolean responses are True. Pandas will recognize both empty cells and “NA” types as missing values.But there are values of some types that Pandas won’t recognize.
 	\subsubsection{Non-Standard Missing Values}
-	If there’s multiple users manually entering data, then this is a common problem. Maybe some like to use “n/a” but other like to use “na”. An easy way to detect these various formats is to put them in a list. Then when we import the data, Pandas will recognize them right away.below is the example of how its done here.
+	On the off chance that there's numerous clients physically entering information, at that point this is a typical issue. Possibly some prefer to utilize "n/a" yet other like to utilize "na". A simple method to recognize these different configurations is to placed them in a list. At that point when we import the data, Pandas will remember them right away. Below is the case of how its done here.
 	\begin{figure}
   	\begin{center}
   			\includegraphics[width=8cm]{images/datacleaning.png}
@@ -1051,14 +1030,13 @@ HTML components are the structure squares of HTML pages. With HTML develops, pic
 	\end{itemize}
   
 	\section{Execution Results and Discussions}
-	The results of execution of the code are quite satisfactory. A complete flow of the application can be observed, without any fatal error and code break. Some of the
-instances are as follows:
+	The consequences of execution of the code are very good. A total flow of the application can be watched, with no deadly mistake and code break. A portion of the occasions are as per the following:
 	\begin{itemize}
-		\item User should be able to signup with email and password
-		\item Existing user should be able to login with valid email and pasword of more the length of 6 characters
-		\item User should be able to predict the heart disease 
-		\item User should be able to predict the diabetes  
-		\item User should be able to move to the contact page of development team by clicking on contact button 
+		\item User are able to signup with email and password
+		\item Existing user are able to login with valid email and password of more the length of 6 characters
+		\item User should be able to predict heart disease 
+		\item User should be able to predict diabetes  
+		\item User are able to move to the contact page of development team by clicking on contact button 
 		\item User should be able to logout from its account succesfully 
 		
 	\end{itemize}
