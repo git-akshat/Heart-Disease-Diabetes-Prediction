@@ -43,7 +43,7 @@
 \contentsline {paragraph}{}{19}{section*.23}%
 \contentsline {section}{\numberline {2.4}Agility and Scrum}{21}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Agility and the cost of change}{21}{subsection.2.4.1}%
-\contentsline {paragraph}{}{22}{section*.26}%
+\contentsline {paragraph}{}{21}{section*.26}%
 \contentsline {section}{\numberline {2.5}Scrum}{22}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Activities performed by the team in the scrum}{22}{subsection.2.5.1}%
 \contentsline {paragraph}{}{23}{section*.28}%
@@ -88,7 +88,7 @@
 \contentsline {subsection}{\numberline {4.5.1}Data cleaning}{59}{subsection.4.5.1}%
 \contentsline {subsubsection}{\numberline {4.5.1.1}Sources of Missing Values}{59}{subsubsection.4.5.1.1}%
 \contentsline {subsubsection}{\numberline {4.5.1.2}Non-Standard Missing Values}{59}{subsubsection.4.5.1.2}%
-\contentsline {subsection}{\numberline {4.5.2}Handling unstructured and structured Data}{60}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Handling unstructured and structured Data}{59}{subsection.4.5.2}%
 \contentsline {section}{\numberline {4.6}Execution Results and Discussions}{60}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Non-functional requirements results}{61}{section.4.7}%
 \contentsline {chapter}{\numberline {5}Testing}{62}{chapter.5}%
@@ -99,8 +99,8 @@
 \contentsline {section}{\numberline {5.2}Test case details}{63}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Test case 1:}{63}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Test case 2:}{64}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Test case 3:}{64}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.3}Test case 3:}{65}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Test case 4:}{65}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Test case 5:}{66}{subsection.5.2.5}%
-\contentsline {chapter}{\numberline {6}Conclusions and Future Scope}{67}{chapter.6}%
-\contentsline {paragraph}{}{67}{section*.51}%
+\contentsline {chapter}{\numberline {6}Conclusions and Future Scope}{68}{chapter.6}%
+\contentsline {paragraph}{}{68}{section*.51}%
