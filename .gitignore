@@ -25,3 +25,6 @@
 **.idea/**
 venv/
 *__pycache__/
+*.aux
+*.gz
+*.log
